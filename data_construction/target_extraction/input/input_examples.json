@@ -1,0 +1,422 @@
+[
+  {
+    "id": 0,
+    "prompt": "Discuss how StarCraft broke the fourth wall. Open your response with exactly one introductory paragraph, present each distinct fourth-wall breaking method as a Markdown unordered list item, and close with exactly one concluding paragraph, with no extra transitional or filler content included. Each unordered list item must run 2 to 3 full sentences to cover both the break's context and its impact on player experience. Any hyphenated word in your response must be 6 to 10 characters long. Among the first 20 words of your reply, 3 to 5 words must have a first letter matching the k-th letter of the English alphabet, where k is the word's position in the response. No numerical digits may appear in any lists, quoted sections, or other structured blocks in your response. Incorporate 1 to 2 of the following verbatim statements from game narrative scholarship to support your points: \"Interactive media has a unique ability to dissolve the barrier between creator, work, and audience.\", \"Fourth-wall breaks in gaming are not just gags, but deliberate tools to deepen player investment.\"",
+    "constraints": [
+      {
+        "constraint": "Open your response with exactly one introductory paragraph, present each distinct fourth-wall breaking method as a Markdown unordered list item, and close with exactly one concluding paragraph, with no extra transitional or filler content included.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Each unordered list item must run 2 to 3 full sentences to cover both the break's context and its impact on player experience.",
+        "category": {
+          "scope": "Condition(Structural Element) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Any hyphenated word in your response must be 6 to 10 characters long.",
+        "category": {
+          "scope": "Condition(Word)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Among the first 20 words of your reply, 3 to 5 words must have a first letter matching the k-th letter of the English alphabet, where k is the word's position in the response.",
+        "category": {
+          "scope": "Position(Word)",
+          "primary_target": "Relations",
+          "secondary_target": "Positional Relations",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "No numerical digits may appear in any lists, quoted sections, or other structured blocks in your response.",
+        "category": {
+          "scope": "Traversal(Structural Block)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Incorporate 1 to 2 of the following verbatim statements from game narrative scholarship to support your points: \"Interactive media has a unique ability to dissolve the barrier between creator, work, and audience.\", \"Fourth-wall breaks in gaming are not just gags, but deliberate tools to deepen player investment.\"",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Intervals"
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "prompt": "What are the key factors that contribute to successful project management? Keep the total number of words in your entire response to no more than 1200. Open your response with a level 1 Markdown heading summarizing your core argument, and make the third word of this heading exactly \"EXECUTION\". The very first word of your entire response must be formatted in bold. Your entire response must contain no fewer than 8 distinct four-digit year values to clearly mark the chronological progression of agile and traditional project management methodology developments. Any sentence that contains the word \"benefit\" must follow the structure \"[Project team role] gains [specific measurable outcome] from [related project governance practice]\", and you should include at least 3 such sentences in your response. For every section that contains a real-world case study and a bulleted list of success drivers, each item in the list must have exactly 2 more words than the number of paragraphs in that section. If you use a bulleted list to present common implementation barriers, ensure no two adjacent list items share the same first letter. Ensure the first 3 sentences of your response contain 2 to 4 parenthetical characters. Structure your content into multiple distinct paragraphs, each focused on a single factor category, and ensure every paragraph incorporates at least one of the following core project governance elements: governance framework, performance baseline, issue escalation process, resource leveling strategy, change request workflow. Any paragraph that contains the word \"waterfall\" must have exactly as many sentences as the number of characters in its first word.",
+    "constraints": [
+      {
+        "constraint": "Keep the total number of words in your entire response to no more than 1200",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Open your response with a level 1 Markdown heading summarizing your core argument, and make the third word of this heading exactly \"EXECUTION\"",
+        "category": {
+          "scope": "Position(Structural Element) -> Position(Word)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "The very first word of your entire response must be formatted in bold",
+        "category": {
+          "scope": "Position(Word)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Your entire response must contain no fewer than 8 distinct four-digit year values to clearly mark the chronological progression of agile and traditional project management methodology developments",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Any sentence that contains the word \"benefit\" must follow the structure \"[Project team role] gains [specific measurable outcome] from [related project governance practice]\", and you should include at least 3 such sentences in your response",
+        "category": {
+          "scope": "Condition(Sentence)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "For every section that contains a real-world case study and a bulleted list of success drivers, each item in the list must have exactly 2 more words than the number of paragraphs in that section",
+        "category": {
+          "scope": "Condition(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "If you use a bulleted list to present common implementation barriers, ensure no two adjacent list items share the same first letter",
+        "category": {
+          "scope": "Condition(Structural Element)",
+          "primary_target": "Relations",
+          "secondary_target": "Chaining Relations",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Ensure the first 3 sentences of your response contain 2 to 4 parenthetical characters",
+        "category": {
+          "scope": "Position(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Structure your content into multiple distinct paragraphs, each focused on a single factor category, and ensure every paragraph incorporates at least one of the following core project governance elements: governance framework, performance baseline, issue escalation process, resource leveling strategy, change request workflow",
+        "category": {
+          "scope": "Traversal(Paragraph)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Any paragraph that contains the word \"waterfall\" must have exactly as many sentences as the number of characters in its first word",
+        "category": {
+          "scope": "Condition(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Arithmetic Relations"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "prompt": "Provide the meaning and cultural context of the Klingon word \"nuqneH\" in the Star Trek franchise, including its usage and translation. Open your response with a short introductory paragraph explaining why \"nuqneH\" is the most widely recognized Klingon lexical item among global pop culture audiences. Immediately after this opening paragraph, include a YAML metadata block that categorizes your analysis by core dimensions, where the number of top-level keys in the YAML is exactly two more than the number of sentences in the introductory paragraph. Present 2 to 3 distinct typical usage scenarios of \"nuqneH\", each structured as [1-2 word scenario label]: `[relevant Klingon dialogue snippet]` → context explanation → specific cultural connotation interpretation. As you detail each scenario and cultural background, every word that starts with the letter 't' and is 7 or more characters long must contain exactly 2 vowel letters. Bold the first uppercase letter of every sentence that outlines Klingon linguistic politeness norms, and ensure the total number of these bolded opening letters falls between 3 and 5. End your response with a paragraph covering the word’s cross-media legacy, which must include a valid XML block that contains exactly 5 <cross-media-appearance> tags, each describing a distinct instance of \"nuqneH\" appearing outside core Star Trek television series.",
+    "constraints": [
+      {
+        "constraint": "Open your response with a short introductory paragraph explaining why \"nuqneH\" is the most widely recognized Klingon lexical item among global pop culture audiences. Immediately after this opening paragraph, include a YAML metadata block that categorizes your analysis by core dimensions, where the number of top-level keys in the YAML is exactly two more than the number of sentences in the introductory paragraph.",
+        "category": {
+          "scope": "Position(Paragraph) -> Position(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Present 2 to 3 distinct typical usage scenarios of \"nuqneH\", each structured as [1-2 word scenario label]: `[relevant Klingon dialogue snippet]` → context explanation → specific cultural connotation interpretation.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "As you detail each scenario and cultural background, every word that starts with the letter 't' and is 7 or more characters long must contain exactly 2 vowel letters.",
+        "category": {
+          "scope": "Condition(Word) -> Traversal(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Bold the first uppercase letter of every sentence that outlines Klingon linguistic politeness norms, and ensure the total number of these bolded opening letters falls between 3 and 5.",
+        "category": {
+          "scope": "Condition(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "End your response with a paragraph covering the word’s cross-media legacy, which must include a valid XML block that contains exactly 5 <cross-media-appearance> tags, each describing a distinct instance of \"nuqneH\" appearing outside core Star Trek television series.",
+        "category": {
+          "scope": "Position(Paragraph) -> Position(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "prompt": "In a genetic database, how can we find a rare genetic mutation that is only present in individuals with green eyes and is linked to a specific personality trait, and the mutation must not be present in any other individual in the database? Can you provide the genetic analysis code for this query? Structure your response into three sections: an opening introductory paragraph explaining the query context, an ordered list of 8 core filtering rules for the genetic database as the second section, and a concluding paragraph summarizing code limitations. The first word of the second entry in this ordered list must be identical to the first word of the seventh entry, and the final word of the third entry must be identical to the final word of the sixth entry. Any sentence that mentions the term 'rare mutation' must contain at least 55 characters to provide sufficient context about the filtering criteria applied to identify the variant. Each paragraph in your explanatory content must include at least one of these core genetic analysis terms: allele, genotype, phenotype, variant, annotation. For the Python genetic analysis code block in your response, ensure 1 to 2 of its comment lines follow the format: # [Analysis Step Name]: [Key implementation note for this step]. Use only periods to end all sentences in your entire response, with no exclamation or question marks included. Never use fully capitalized words shorter than four characters in your response. No list item may contain the abbreviation \"mut\" when referencing the genetic mutation.",
+    "constraints": [
+      {
+        "constraint": "Structure your response into three sections: an opening introductory paragraph explaining the query context, an ordered list of 8 core filtering rules for the genetic database as the second section, and a concluding paragraph summarizing code limitations. The first word of the second entry in this ordered list must be identical to the first word of the seventh entry, and the final word of the third entry must be identical to the final word of the sixth entry.",
+        "category": {
+          "scope": "Position(Structural Block) -> Position(Structural Element) -> Position(Word)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Any sentence that mentions the term 'rare mutation' must contain at least 55 characters to provide sufficient context about the filtering criteria applied to identify the variant.",
+        "category": {
+          "scope": "Condition(Sentence) -> Traversal(Character)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Each paragraph in your explanatory content must include at least one of these core genetic analysis terms: allele, genotype, phenotype, variant, annotation.",
+        "category": {
+          "scope": "Traversal(Paragraph)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "For the Python genetic analysis code block in your response, ensure 1 to 2 of its comment lines follow the format: # [Analysis Step Name]: [Key implementation note for this step].",
+        "category": {
+          "scope": "Condition(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Use only periods to end all sentences in your entire response, with no exclamation or question marks included.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Never use fully capitalized words shorter than four characters in your response.",
+        "category": {
+          "scope": "Condition(Word)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "No list item may contain the abbreviation \"mut\" when referencing the genetic mutation.",
+        "category": {
+          "scope": "Traversal(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Prohibition"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "prompt": "What is the word order of Traditional Mandarin Chinese, and how is it different from English? Present your entire answer in no more than 2 short paragraphs for easy reference. Ensure no nested structured blocks (such as a list inside a blockquote, a table inside a list item, or a code block inside a table cell) appear in your response. Additionally, every sentence that mentions the term \"Mandarin Chinese\" must have a final word with exactly 7 characters.",
+    "constraints": [
+      {
+        "constraint": "Present your entire answer in no more than 2 short paragraphs",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "no nested structured blocks (such as a list inside a blockquote, a table inside a list item, or a code block inside a table cell) appear in your response",
+        "category": {
+          "scope": "Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Nesting Depth",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "every sentence that mentions the term \"Mandarin Chinese\" must have a final word with exactly 7 characters",
+        "category": {
+          "scope": "Condition(Sentence) -> Position(Word) -> Traversal(Character)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "prompt": "How would you define the genre of a sci-fi drama? Organize your response under two level-2 Markdown headings titled \"Core Definitional Traits\" and \"Genre Boundary Distinctions\" respectively. Ensure the first paragraph listed under the \"Core Definitional Traits\" heading mentions the word \"speculative\" at least twice. Present each boundary distinction between sci-fi drama and adjacent genres in a separate Markdown blockquote, with each blockquote including a clear adjacent genre label, a specific distinguishing feature, and a representative work example. Do not include the word \"fantasy\" anywhere in your first blockquote.",
+    "constraints": [
+      {
+        "constraint": "Organize your response under two level-2 Markdown headings titled \"Core Definitional Traits\" and \"Genre Boundary Distinctions\" respectively, and the first paragraph under the \"Core Definitional Traits\" heading mentions the word \"speculative\" at least twice.",
+        "category": {
+          "scope": "Position(Structural Element) -> Position(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Each boundary distinction is presented in a separate Markdown blockquote, and each blockquote includes an adjacent genre label, a distinguishing feature, and a representative work example.",
+        "category": {
+          "scope": "Traversal(Structural Block)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Do not include the word \"fantasy\" anywhere in the first blockquote.",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Prohibition"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "prompt": "Answer whether AI will play a significant role in the future of technology, with your entire response written as a single unbroken block of text with no line breaks, paragraph separators, or section headers of any kind, with all required content merged seamlessly into one continuous passage. For your entire response, the total number of numerical digits used should be greater than the total number of periods used. Include at least 3 complete sentences within the first 500 characters of your response to lay clear context for readers new to AI technology. Ensure the 10th, 20th, and 30th words of your entire response are exactly \"sustainability\", \"profitability\", and \"accountability\" respectively. Include 3 to 5 of the following core tech-related terms throughout your response: cloud migration, API-first architecture, zero-trust security, agile project management, data governance framework, employee upskilling program. Ensure at least 3 adjacent sentence pairs across the entire response follow the rule that the final word of the earlier sentence is exactly identical to the first word of the later sentence, ignoring case differences. Ensure an additional 2 adjacent sentence pairs across the entire response follow the rule that the final non-punctuation character of the earlier sentence is exactly identical to the first character of the later sentence, ignoring case differences. For your entire response, the total number of uppercase letters used should be greater than the total number of exclamation marks used.",
+    "constraints": [
+      {
+        "constraint": "全文为无换行、无段落分隔、无任何类型标题的连续文本，所有内容无缝合并为一个连续段落",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "整个回复中数字字符的总数大于句号的总数",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "回复的前500字符内包含至少3个完整句子",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "全文的第10、20、30个单词分别为\"sustainability\"、\"profitability\"、\"accountability\"",
+        "category": {
+          "scope": "Position(Word)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "全文包含3到5个指定的核心技术术语：cloud migration, API-first architecture, zero-trust security, agile project management, data governance framework, employee upskilling program",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "全文至少有3对相邻句子满足前一句的最后一个词与后一句的第一个词完全相同（忽略大小写）",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Relations",
+          "secondary_target": "Chaining Relations",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "全文另有2对相邻句子满足前一句的最后一个非标点字符与后一句的第一个字符完全相同（忽略大小写）",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Relations",
+          "secondary_target": "Chaining Relations",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "整个回复中大写字母的总数大于感叹号的总数",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Comparison"
+        }
+      }
+    ]
+  }
+]

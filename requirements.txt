@@ -1,0 +1,7 @@
+# Data construction and ScopeIF-Test evaluation.
+# RL training has its own dependencies: see ScopeIF/requirements.txt (verl).
+openai>=1.0.0
+tqdm>=4.65.0
+transformers>=4.51.0
+vllm>=0.8.0
+pysbd>=0.3.4

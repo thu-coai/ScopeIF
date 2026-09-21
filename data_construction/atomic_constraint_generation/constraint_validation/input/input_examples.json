@@ -1,0 +1,152 @@
+[
+  {
+    "id": 0,
+    "prompt": "Analyze the fossil record evidence for the evolution of the horse, focusing on the significant changes in size, foot structure, and dental features that occurred over 55 million years, from the early ancestor Hyracotherium to the modern equine, and explain how these adaptations enabled horses to thrive in their changing environments. Keep your analysis concise enough to fit within the allocated space for a 10-point undergraduate paleontology final exam short answer question, with no supplementary pages or margin writing permitted.",
+    "constraints": [
+      {
+        "constraint": "Keep your analysis concise enough to fit within the allocated space for a 10-point undergraduate paleontology final exam short answer question, with no supplementary pages or margin writing permitted.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "prompt": "What are the main benefits of using a project management tool in a business environment? Your entire response must be in all lowercase letters, with only the very first character of the first sentence capitalized.",
+    "constraints": [
+      {
+        "constraint": "Your entire response must be in all lowercase letters, with only the very first character of the first sentence capitalized.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "prompt": "What are some interesting facts about fish in the ocean? Organize your answer into distinct thematic paragraphs. For any paragraph that mentions deep-sea fish species, include 2 to 3 separate Markdown tables within that paragraph to outline unique biological adaptations of each mentioned species.",
+    "constraints": [
+      {
+        "constraint": "Organize your answer into distinct thematic paragraphs. For any paragraph that mentions deep-sea fish species, include 2 to 3 separate Markdown tables within that paragraph to outline unique biological adaptations of each mentioned species.",
+        "category": {
+          "scope": "Condition(Paragraph) -> Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "prompt": "What are the key elements of cholo fashion? Any word with more than 6 characters that refers to a fabric used in core cholo fashion pieces must not contain any uppercase letters, even for brand or trademarked fabric names, to maintain consistent formatting across my research notes.",
+    "constraints": [
+      {
+        "constraint": "Any word with more than 6 characters that refers to a fabric used in core cholo fashion pieces must not contain any uppercase letters, even for brand or trademarked fabric names, to maintain consistent formatting across my research notes.",
+        "category": {
+          "scope": "Condition(Word)",
+          "primary_target": "Checklist",
+          "secondary_target": "Validity",
+          "range": "Prohibition"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "prompt": "I have a small garden where I grow tomatoes and cucumbers. Can you suggest some tips for maintaining a healthy garden, especially during the summer months? Structure your response into three distinct paragraphs: a general overview of common warm-weather garden risks, targeted care guidance for tomato plants, and targeted care guidance for cucumber plants. Ensure more sentences following the structure \"To mitigate [specific summer garden stressor], implement [targeted care action] every [1-7 day time frame] for optimal crop health\" appear in the second paragraph than in the third paragraph.",
+    "constraints": [
+      {
+        "constraint": "Structure your response into three distinct paragraphs: a general overview of common warm-weather garden risks, targeted care guidance for tomato plants, and targeted care guidance for cucumber plants. Ensure more sentences following the structure \"To mitigate [specific summer garden stressor], implement [targeted care action] every [1-7 day time frame] for optimal crop health\" appear in the second paragraph than in the third paragraph.",
+        "category": {
+          "scope": "Position(Paragraph)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Comparison"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "prompt": "Hey ChatGPT, tell me how to check my TF2 community server IP with a console command, and make sure the first word of your final sentence is exactly the same as the last word of your first sentence.",
+    "constraints": [
+      {
+        "constraint": "and make sure the first word of your final sentence is exactly the same as the last word of your first sentence",
+        "category": {
+          "scope": "Position(Sentence)",
+          "primary_target": "Relations",
+          "secondary_target": "Positional Relations",
+          "range": "Arithmetic Relations"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "prompt": "What are some of the most inspiring aspects of nature? Discuss at least 4 distinct inspiring qualities of the natural world, and conclude your response with a final paragraph that explicitly references the aurora borealis, giant sequoias, and ocean tides as three particularly striking examples of nature's capacity to uplift and inspire.",
+    "constraints": [
+      {
+        "constraint": "conclude your response with a final paragraph that explicitly references the aurora borealis, giant sequoias, and ocean tides as three particularly striking examples of nature's capacity to uplift and inspire",
+        "category": {
+          "scope": "Position(Paragraph)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "prompt": "Explain the different components that make up an AI system, presenting each component as a distinct bulleted list item for readability. Each bulleted list item may contain no more than 1 numerical digit total to keep the focus on qualitative explanations rather than technical statistics.",
+    "constraints": [
+      {
+        "constraint": "presenting each component as a distinct bulleted list item for readability. Each bulleted list item may contain no more than 1 numerical digit total to keep the focus on qualitative explanations rather than technical statistics.",
+        "category": {
+          "scope": "Traversal(Structural Element) -> Traversal(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "prompt": "What is the 2010 show on PBS Kids featuring teenagers and a secret agent dog? Dedicate one separate paragraph to each of the following topics: show premise, main cast, and broadcast history. Include 1 to 2 small structured elements (either a compact comparison table or a short bulleted list) within each paragraph to highlight key data points.",
+    "constraints": [
+      {
+        "constraint": "Dedicate one separate paragraph to each of the following topics: show premise, main cast, and broadcast history. Include 1 to 2 small structured elements (either a compact comparison table or a short bulleted list) within each paragraph to highlight key data points.",
+        "category": {
+          "scope": "Traversal(Paragraph) -> Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "prompt": "Imagine you are at a job interview for a specific position in your current field of expertise. Make a bulleted list of three possible behavioral questions you could be asked that would allow the interviewer to assess your skills and experience, and provide specific examples from your past work experience. For each list entry, the total character count of the question must be exactly one-third the total character count of its corresponding example.",
+    "constraints": [
+      {
+        "constraint": "For each list entry, the total character count of the question must be exactly one-third the total character count of its corresponding example.",
+        "category": {
+          "scope": "Traversal(Structural Element) -> Position(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Arithmetic Relations"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,566 @@
+[
+  {
+    "id": 0,
+    "prompt": "Create a concise and catchy web page title that incorporates a descriptive phrase and a clear topic indicator for a page about sustainable travel, targeting environmentally conscious travelers. Start your response with a reference table outlining the suitability of 5 common sustainable travel keywords for title construction, with this table containing 3 to 4 columns for keyword, fit for descriptive phrase, fit for topic indicator, and optional priority score. Present each generated title candidate as a Markdown level 3 heading, with each level 3 heading including 1 to 2 relevant sustainability or travel-themed emojis. Do not use first-person personal pronouns anywhere in your response.",
+    "constraints": [
+      {
+        "constraint": "Start your response with a reference table outlining the suitability of 5 common sustainable travel keywords for title construction, with this table containing 3 to 4 columns for keyword, fit for descriptive phrase, fit for topic indicator, and optional priority score.",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Present each generated title candidate as a Markdown level 3 heading, with each level 3 heading including 1 to 2 relevant sustainability or travel-themed emojis.",
+        "category": {
+          "scope": "Traversal(Structural Element) -> Traversal(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Do not use first-person personal pronouns anywhere in your response.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "Prohibition"
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Organize the entire presentation content into 3 to 5 distinct <section> blocks, each dedicated to a single core industry impacted by globalization. Please include data in the form of Excel tables and charts, and use between 2 and 4 total emoji characters to highlight particularly notable data trends across these materials. Additionally, provide R code to show the correlation between international trade and economic growth in developing countries. The total number of inline code snippets wrapped in single backticks across the entire response must be 0; all code must be presented in full fenced code blocks to ensure readability of longer workflow segments. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "constraints": [
+      {
+        "constraint": "Organize the entire presentation content into 3 to 5 distinct <section> blocks, each dedicated to a single core industry impacted by globalization.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Use between 2 and 4 total emoji characters to highlight particularly notable data trends across these materials.",
+        "category": {
+          "scope": "Condition(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The total number of inline code snippets wrapped in single backticks across the entire response must be 0; all code must be presented in full fenced code blocks to ensure readability of longer workflow segments.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Prohibition"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "prompt": "Write a list of Nintendo consoles. Start your response with a level 1 Markdown heading following the format \"Complete Chronological List of NINTENDO Video Game Consoles (1977–2024)\", with 1 to 2 key industry terms in the heading written in all uppercase. Organize your content into H2-level sections for home consoles and handheld consoles, and include 1 to 2 comparative tables within each H2 section to visualize launch year and global sales data for each console. Ensure you use more underscore characters than asterisk characters throughout your entire response.",
+    "constraints": [
+      {
+        "constraint": "Start your response with a level 1 Markdown heading following the format \"Complete Chronological List of NINTENDO Video Game Consoles (1977–2024)\", with 1 to 2 key industry terms in the heading written in all uppercase.",
+        "category": {
+          "scope": "Position(Structural Element) -> Traversal(Word)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Organize your content into H2-level sections for home consoles and handheld consoles, and include 1 to 2 comparative tables within each H2 section to visualize launch year and global sales data for each console.",
+        "category": {
+          "scope": "Traversal(Structural Block) -> Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Ensure you use more underscore characters than asterisk characters throughout your entire response.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Comparison"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "prompt": "In the field of finance, answer the following questions regarding Python-enabled ethical machine learning for investment decision-making: first, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Second, is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task? Start your response with a short introductory paragraph outlining your core analytical framework, and ensure at least 4 technical terms used in this opening paragraph are written in all uppercase letters. The third sentence of your entire response must contain 2 to 3 numeric values referencing baseline performance metrics for ethical screening models in investment scenarios. The third content block of your response must be an ordered list of actionable implementation steps for ethical ML pipeline governance, containing exactly 5 distinct items. Do not use backtick characters to format any text as inline code in your response; refer to all functions, variables, and code elements in standard prose without special formatting. Ensure there are exactly 6 parenthesis characters present in your entire response.",
+    "constraints": [
+      {
+        "constraint": "回复以概述核心分析框架的简短引言段落开头，且该引言段落中使用的至少4个技术术语以全大写形式书写",
+        "category": {
+          "scope": "Position(Paragraph) -> Traversal(Word)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "回复的第三句包含2-3个指代投资场景中伦理筛查模型基线性能指标的数值",
+        "category": {
+          "scope": "Position(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "回复的第三个内容块为伦理ML流程治理的可执行实施步骤有序列表，包含恰好5个不同条目",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "回复中不得使用反引号字符将任何内容格式化为行内代码，所有函数、变量和代码元素均以标准 prose 形式提及",
+        "category": {
+          "scope": "Traversal(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "全文恰好包含6个括号字符",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same. Each sentence in your response must contain exactly one numerical digit. Include 2 to 4 explanatory points following the structure \"[PHP Code Module Name]: [Functional role of the module in the grade management system]\" to clearly elaborate on the core modules of your implementation. Organize each core operation step under its own level-3 Markdown heading, and ensure no headings contain any numeric digits. Ensure you explicitly cover exactly the following four core required components, with no additional core components included: multi-subject grade entry form logic, weighted overall grade calculation function, subject comment rule mapping table, input data validation module. End your explanation with a summary paragraph starting with \"To summarize\", and ensure this paragraph contains between 2 and 4 sentences.",
+    "constraints": [
+      {
+        "constraint": "Each sentence in your response must contain exactly one numerical digit.",
+        "category": {
+          "scope": "Traversal(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Include 2 to 4 explanatory points following the structure \"[PHP Code Module Name]: [Functional role of the module in the grade management system]\" to clearly elaborate on the core modules of your implementation.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Organize each core operation step under its own level-3 Markdown heading, and ensure no headings contain any numeric digits.",
+        "category": {
+          "scope": "Traversal(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Ensure you explicitly cover exactly the following four core required components, with no additional core components included: multi-subject grade entry form logic, weighted overall grade calculation function, subject comment rule mapping table, input data validation module.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "End your explanation with a summary paragraph starting with \"To summarize\", and ensure this paragraph contains between 2 and 4 sentences.",
+        "category": {
+          "scope": "Condition(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Intervals"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand? Your response must open with a lead line containing exactly 2 em dashes. Split your answer into two core sections under Level 2 Markdown headings: one covering the best interview preparation methods, and one covering the top three in-demand skills. Present each section’s core claims as bulleted points under its heading, where the second bullet point under the preparation methods section must contain a Markdown table with the column headers \"Prep Stage\", \"Time Allocation (Hours)\", and \"Key Deliverable\" with no additional columns. For the in-demand skills section, use 2 to 3 of the following terms as subheadings to organize your content: technical proficiency, behavioral alignment, cultural fit, problem-solving agility, communication clarity. Include 2 to 3 distinct structured supplementary elements across your response: you may add a quoted block of a hiring manager’s firsthand interview feedback, a bulleted list of common last-minute prep mistakes, or a bolded callout of the most overlooked preparation step. Organize the three in-demand skills in order of the number of syllables in their common name from fewest to most.",
+    "constraints": [
+      {
+        "constraint": "Your response must open with a lead line containing exactly 2 em dashes.",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Split your answer into two core sections under Level 2 Markdown headings, present each section’s core claims as bulleted points under its heading, where the second bullet point under the preparation methods section must contain a Markdown table with the column headers \"Prep Stage\", \"Time Allocation (Hours)\", and \"Key Deliverable\" with no additional columns.",
+        "category": {
+          "scope": "Position(Structural Block) -> Position(Structural Element)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "For the in-demand skills section, use 2 to 3 of the following terms as subheadings to organize your content: technical proficiency, behavioral alignment, cultural fit, problem-solving agility, communication clarity.",
+        "category": {
+          "scope": "Position(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Include 2 to 3 distinct structured supplementary elements across your response: you may add a quoted block of a hiring manager’s firsthand interview feedback, a bulleted list of common last-minute prep mistakes, or a bolded callout of the most overlooked preparation step.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Organize the three in-demand skills in order of the number of syllables in their common name from fewest to most.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Relations",
+          "secondary_target": "Ordering Relations",
+          "range": "Comparison"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "prompt": "I’m writing a story about a mysterious forest, and I need a description that balances eerie and inviting tones. Craft your description with every word you use falling between 3 and 10 characters in length. Structure the content into multiple paragraphs, each opening with the phrase “The hush of the undergrowth” and closing with the phrase “thrum of the unseen”. Each paragraph’s final sentence must sit on its own standalone line. Use 1 to 3 horizontal rules (---) to separate distinct scene sections throughout the text. The third paragraph must contain exactly 7 sentences; when you read the nth character of the nth sentence in this paragraph sequentially, they must spell the word “WANDERER”. The third sentence from the end of your entire description must contain more numerical digits than commas. Ensure the very last character of the entire response is a lowercase “g”.",
+    "constraints": [
+      {
+        "constraint": "Every word used in the description must be between 3 and 10 characters in length.",
+        "category": {
+          "scope": "Traversal(Word)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Each paragraph must open with the phrase “The hush of the undergrowth” and close with the phrase “thrum of the unseen”.",
+        "category": {
+          "scope": "Traversal(Paragraph)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Each paragraph’s final sentence must sit on its own standalone line.",
+        "category": {
+          "scope": "Traversal(Paragraph) -> Position(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Use 1 to 3 horizontal rules (---) to separate distinct scene sections throughout the text.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The third paragraph must contain exactly 7 sentences, and the nth character of the nth sentence in this paragraph must spell “WANDERER” when read sequentially.",
+        "category": {
+          "scope": "Position(Paragraph) -> Position(Sentence) -> Position(Character)",
+          "primary_target": "Relations",
+          "secondary_target": "Positional Relations",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "The third sentence from the end of the entire description must contain more numerical digits than commas.",
+        "category": {
+          "scope": "Position(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "The very last character of the entire response must be a lowercase “g”.",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "prompt": "What are the benefits of using a humidifier in your home, and how does it work? Organize all content into no more than 6 paragraphs to avoid overwhelming readers. Ensure your entire response contains exactly 160 words in total, with all technical terms, measurement units, and brand references counted as single words when tallying. Answer across all paragraphs with every sentence containing exactly 8 words. Ensure the 80th to 150th characters of your response contain a total of 2 to 3 hyphens linking humidity-related terms. Any paragraph longer than 80 words must contain at least 3 numerical digits. Across all sentences ending in a period, mention the term “moisture” between 2 and 4 times total. The last word of the second sentence in your response must be exactly 8 characters long.",
+    "constraints": [
+      {
+        "constraint": "Organize all content into no more than 6 paragraphs.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Your entire response contains exactly 160 words in total, with all technical terms, measurement units, and brand references counted as single words when tallying.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Every sentence in each paragraph contains exactly 8 words.",
+        "category": {
+          "scope": "Traversal(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "The 80th to 150th characters of your response contain a total of 2 to 3 hyphens linking humidity-related terms.",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Any paragraph longer than 80 words must contain at least 3 numerical digits.",
+        "category": {
+          "scope": "Condition(Paragraph)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Across all sentences ending in a period, the term “moisture” appears between 2 and 4 times total.",
+        "category": {
+          "scope": "Condition(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The last word of the second sentence in your response is exactly 8 characters long.",
+        "category": {
+          "scope": "Position(Sentence) -> Position(Word)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "prompt": "As a data scientist for a large-scale transportation project, you have been tasked with developing an algorithm for predicting traffic congestion based on live traffic data. Provide a detailed implementation plan covering the identification of appropriate machine learning models, determination of required hardware specifications, and configuration of real-time data processing pipelines. Structure your response into two distinct core sections: *Algorithm Development Framework* and *Deployment & Operationalization*, with the first section containing at least 8 full sentences to elaborate on data feature selection and model selection logic. The full text must total no fewer than 2000 characters, and all Markdown headings must not start with a numeric digit. Organize all key factors affecting congestion prediction accuracy into the first bulleted list in your response, and ensure none of the list entries include any numerals. If you add an extra bulleted list for deployment considerations, each odd-numbered list item must contain no more than 1 numerical digit. Under the heading *Real-World Deployment Risk Scenarios*, present 3 real deployment risk scenarios in a bulleted list, with each list item being a single complete sentence describing a specific scenario. Ensure every sentence in your explanation contains at least 5 uppercase letters. End your response with a single concluding sentence summarizing the overall feasibility of the plan, and ensure the number of punctuation marks in the last 8 characters of the penultimate sentence of your entire response falls between 1 and 2. The final character of your entire response must be a lowercase consonant.",
+    "constraints": [
+      {
+        "constraint": "Structure your response into two distinct core sections: *Algorithm Development Framework* and *Deployment & Operationalization*, with the first section containing at least 8 full sentences to elaborate on data feature selection and model selection logic",
+        "category": {
+          "scope": "Position(Structural Block) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "The full text must total no fewer than 2000 characters",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "All Markdown headings must not start with a numeric digit",
+        "category": {
+          "scope": "Condition(Structural Block) -> Position(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Organize all key factors affecting congestion prediction accuracy into the first bulleted list in your response, and ensure none of the list entries include any numerals",
+        "category": {
+          "scope": "Position(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Each odd-numbered list item in the extra bulleted list for deployment considerations must contain no more than 1 numerical digit",
+        "category": {
+          "scope": "Position(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Under the heading *Real-World Deployment Risk Scenarios*, present 3 real deployment risk scenarios in a bulleted list, with each list item being a single complete sentence describing a specific scenario",
+        "category": {
+          "scope": "Condition(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Ensure every sentence in your explanation contains at least 5 uppercase letters",
+        "category": {
+          "scope": "Traversal(Sentence) -> Traversal(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "End your response with a single concluding sentence summarizing the overall feasibility of the plan, and ensure the number of punctuation marks in the last 8 characters of the penultimate sentence of your entire response falls between 1 and 2",
+        "category": {
+          "scope": "Position(Sentence) -> Position(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The final character of your entire response must be a lowercase consonant",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "prompt": "Revise the following paragraph to align with APA style guidelines, and structure your response per the below specifications: Start with a clear overview of your revision approach organized into 3 distinct paragraphs: the first introduces key APA compliance issues present in the original text, the second outlines your core revision framework, the third lists post-revision verification checkpoints, and ensure the third paragraph contains more than twice as many sentences as the first paragraph. Extract 3 major adjustment points from your revision work, with each adjustment point presented in a separate blockquote section, and ensure the total character count of each blockquote is exactly twice that of the previous blockquote. Organize 6 actionable APA revision operation tips into a numbered list, and ensure the 5th entry in this list includes no fewer than 2 nested sub-points detailing low-effort APA format verification techniques. Any list item that contains the phrase \"in-text citation\" must include the terms \"parenthetical reference\" and \"reference list entry\". Enclose every word with 9 or more letters in square brackets, and include at least 6 such words in your response. Present each highlighted improvement made to the original text in its own <details> disclosure block. Every <details> block must include a fenced code snippet showing a side-by-side comparison of the original and revised text snippets. Any paragraph that contains the word \"conciseness\" must contain at least 3 full sentences to elaborate on APA style’s requirements for concise, academic phrasing. Make certain the total number of sentences in your full response is at least 8 times the number of hyphens used throughout the entire text. End your response with a short final paragraph with a quick APA style self-check tip, and ensure the third word of that final paragraph contains a capital letter.\n\nOriginal paragraph:\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "Structure your revision approach overview into 3 distinct paragraphs: the first introduces key APA compliance issues present in the original text, the second outlines your core revision framework, the third lists post-revision verification checkpoints, and ensure the third paragraph contains more than twice as many sentences as the first paragraph",
+        "category": {
+          "scope": "Position(Paragraph)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "Extract 3 major adjustment points from your revision work, with each adjustment point presented in a separate blockquote section, and ensure the total character count of each blockquote is exactly twice that of the previous blockquote",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Relations",
+          "secondary_target": "Chaining Relations",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Organize 6 actionable APA revision operation tips into a numbered list, and ensure the 5th entry in this list includes no fewer than 2 nested sub-points detailing low-effort APA format verification techniques",
+        "category": {
+          "scope": "Position(Structural Element)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Any list item that contains the phrase \"in-text citation\" must include the terms \"parenthetical reference\" and \"reference list entry\"",
+        "category": {
+          "scope": "Condition(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Enclose every word with 9 or more letters in square brackets, and include at least 6 such words in your response",
+        "category": {
+          "scope": "Condition(Word)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Present each highlighted improvement made to the original text in its own <details> disclosure block. Every <details> block must include a fenced code snippet showing a side-by-side comparison of the original and revised text snippets",
+        "category": {
+          "scope": "Traversal(Structural Block) -> Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Any paragraph that contains the word \"conciseness\" must contain at least 3 full sentences to elaborate on APA style’s requirements for concise, academic phrasing",
+        "category": {
+          "scope": "Condition(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Make certain the total number of sentences in your full response is at least 8 times the number of hyphens used throughout the entire text",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "End your response with a short final paragraph with a quick APA style self-check tip, and ensure the third word of that final paragraph contains a capital letter",
+        "category": {
+          "scope": "Position(Paragraph) -> Position(Word)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  }
+]

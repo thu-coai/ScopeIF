@@ -1,0 +1,996 @@
+[
+  {
+    "id": 0,
+    "prompt": "Create a concise and catchy web page title that incorporates a descriptive phrase and a clear topic indicator for a page about sustainable travel, targeting environmentally conscious travelers. Start your response with a reference table outlining the suitability of 5 common sustainable travel keywords for title construction, with this table containing 3 to 4 columns for keyword, fit for descriptive phrase, fit for topic indicator, and optional priority score. Present each generated title candidate as a Markdown level 3 heading, with each level 3 heading including 1 to 2 relevant sustainability or travel-themed emojis. Do not use first-person personal pronouns anywhere in your response.",
+    "constraints": [
+      {
+        "constraint": "Start your response with a reference table outlining the suitability of 5 common sustainable travel keywords for title construction, with this table containing 3 to 4 columns for keyword, fit for descriptive phrase, fit for topic indicator, and optional priority score.",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Present each generated title candidate as a Markdown level 3 heading, with each level 3 heading including 1 to 2 relevant sustainability or travel-themed emojis.",
+        "category": {
+          "scope": "Traversal(Structural Element) -> Traversal(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Do not use first-person personal pronouns anywhere in your response.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "Prohibition"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": false,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "不通过",
+              "reasoning": "**分析**  \n用户指令中的格式要求（即能够用“作用域·作用目标·计量范围”三要素表述的约束）如下：\n\n1. **表格置首**：回复必须以一张参考表格开始，表格列数为 3‑4 列，包含 5 条可持续旅行关键词以及对应的“适合描述性短语”“适合主题指示”“可选优先级”信息。  \n2. **标题呈现**：每个生成的标题必须使用 Markdown 的三级标题（`###`），且每个标题内必须包含 1‑2 个与可持续或旅行主题相关的 Emoji。  \n3. **人称限制**：全文不得出现第一人称代词（如 *I、me、my* 等）。  \n4. **标题内容结构**：每个标题必须**同时**包含一个**描述性短语**以及一个**明确的主题指示**（即标题需兼具对旅行的描述和对“可持续旅行”这一主题的指明）。这是一条必须满足的内容结构约束，属于“计量范围为等于关系、数值为 1”的非计数式格式要求。  \n5.（可选）**简洁性**：指令中要求“concise and catchy”，但“concise”属于主观风格描述，无法归入客观可计量的格式要求，故不计入必须抽取的格式约束。\n\n在提供的 **格式要求列表** 中，只出现了第 1、2、3 条。第 4 条（标题必须同时具备描述性短语和主题指示）未被抽取，导致：\n\n- **条件 1**（完整提取所有格式要求）未满足，遗漏了“一条明确的标题内容结构约束”。  \n- 其余条件（准确性、无重复、表述清晰、非计数式要求不遗漏）虽基本满足，但因缺失第 4 条而整体不合格。\n\n**最终结论**：[[不通过]]。"
+            },
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "不通过",
+              "reasoning": "**分析**：\n\n1. **用户指令中出现的所有格式要求**  \n   按照分类体系，格式要求指的是对回复的结构、布局、计数或其他客观可判定的约束。逐句审视用户指令，可识别出以下格式约束：\n\n   - **表格要求**：  \n     - 必须在回复开头放置一张参考表格。  \n     - 表格需列出 **5** 个常见的可持续旅行关键词。  \n     - 表格列数为 **3 到 4 列**，分别是 “keyword”、 “fit for descriptive phrase”、 “fit for topic indicator” 以及可选的 “priority score”。  \n   - **标题与 Emoji 要求**：  \n     - 每个生成的标题必须以 **Markdown 三级标题**（`###`）呈现。  \n     - 每个三级标题必须包含 **1 到 2** 个与可持续性或旅行主题相关的 Emoji。  \n   - **人称代词禁用**：  \n     - 整篇回复**禁止使用第一人称代词**（如 “I”, “we”, “me”, “my” 等）。  \n   - **标题内部结构要求**：  \n     - 生成的标题需 **同时包含** 一个 **描述性短语**（descriptive phrase）和一个 **明确的主题指示**（topic indicator），即标题应由这两个组成部分组成。  \n     - 该要求虽未给出具体计数，但属于**非计数式的格式约束**（类似 “The response must end with …”），应归入计量范围为“等于关系，数值为 1”的格式要求。\n\n   以上四项构成指令内全部的格式约束。其余内容（如“创建简洁且吸引人的标题”“针对环保旅行者”等）属于语义/内容需求，不属于格式要求。\n\n2. **抽取的格式要求列表对比**  \n   抽取列表提供了三条约束：\n\n   - 表格要求（第 1 条） ✅  \n   - 标题 + Emoji 要求（第 2 条） ✅  \n   - 禁止使用第一人称代词（第 3 条） ✅  \n\n   **缺失项**：标题必须“**包含描述性短语和明确的主题指示**”的要求未被抽取。\n\n3. **逐条检查评判标准**  \n\n   - **① 完整性**：抽取结果未覆盖所有格式要求（缺少标题内部结构要求），不满足完整提取的要求。  \n   - **② 准确性**：已抽取的三条约束均与指令对应，准确；但因缺失一条导致整体准确性不足。  \n   - **③ 无重复**：抽取的三条没有重复或虚构的内容。  \n   - **④ 表述清晰**：三条的表述完整、无歧义。  \n   - **⑤ 非计数式格式要求**：指令中的标题内部结构要求属于此类，但未被抽取，违反了第 5 条不遗漏非计数式格式要求的规则。  \n   - **⑥ 粒度**：即便可以合并或拆分，缺失的那条仍未出现，故不影响结论。\n\n   因为第 1 条（完整性）以及第 5 条（不遗漏非计数式格式要求）未通过，整体抽取结果未通过。\n\n**最终结论**：[[不通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**：\n\n1. **意图非常明确**  \n   - 明确要求生成一个简洁且吸引人的网页标题，包含描述性短语和明确的主题指示；先提供包含 5 个常见可持续旅行关键词的参考表格；随后以 Markdown 三级标题形式展示每个标题候选，并在标题中加入 1‒2 个相关表情符号；禁止使用第一人称代词。所有需求均清晰列出。\n\n2. **语义非常清晰，语言通顺、流畅、容易理解，没有歧义**  \n   - 各项指令（表格列数、关键词数量、标题层级、表情符号数量、避免第一人称）均表述明确，未出现模糊或歧义的表达。\n\n3. **不存在错误内容或错误信息**  \n   - 指令本身不包含任何错误信息或事实性错误。\n\n4. **不超出无法联网的纯文本模型的能力范围**  \n   - 所需的关键词、表格制作、标题创作以及表情符号的添加均属于模型的通用语言与创意能力，无需联网或外部专业知识。\n\n5. **不存在无法完成的要求**  \n   - 表格列数（3‒4 列）可灵活满足；“optional priority score” 为可选项，模型可自行决定是否提供。所有要求均在模型可执行范围内。\n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 先提供表格 → 再提供标题的执行顺序合理，未出现前后矛盾或循环依赖。\n\n7. **内部逻辑一致，不存在矛盾的逻辑或要求**  \n   - 表格列出关键词的适配度，随后的标题应基于这些关键词生成，二者相互呼应，指令内部无冲突。\n\n8. **指令内容完整、材料完整，不存在内容缺失或材料缺失**  \n   - 虽然用户未列出具体关键词，但指令已说明“5 个常见可持续旅行关键词”，这属于模型可自行选取的常识信息，不视为材料缺失。\n\n9. **用户指令提供了所有需要的数据或信息**  \n   - 所需的信息（标题主题、目标受众、表格结构、标题格式等）均已在指令中给出；关键词可基于常识自行生成，故不属于缺失的数据。\n\n10. **指令中不能存在需要多轮交互才能解决的问题**  \n    - 所有步骤（表格、标题生成）均可在单轮回复中完成，无需后续澄清或补充。\n\n11. **简洁明了**  \n    - 指令虽较详细，但所有额外解释均在同一句话中给出，未出现冗余的括号说明或不必要的例子，符合简洁性要求。\n\n综上所述，该用户指令在意图、表述、可执行性、逻辑一致性及完整性等方面均符合高质量指令的全部评判标准。\n\n**最终结论**：[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "分析：  \n1. **意图明确**——指令要求生成一个简洁有吸引力的网页标题，并在回答开头提供一个参考表格，对5个常见可持续旅行关键词在标题构建中的适配性进行评价；随后以 Markdown 三级标题形式展示每个标题候选，并在标题中加入1至2个相关表情符号，且全文不使用第一人称代词。意图清晰且具体。  \n2. **语义清晰**——对表格列数 (“3 到 4 列”，包括关键词、是否适合作描述性短语、是否适合作主题指示以及可选的优先级得分）以及标题的格式（Markdown 三级标题、表情符号数量）均作了明确说明，语言通顺，无歧义。  \n3. **无错误内容**——指令未包含任何事实错误或不准确信息。  \n4. **符合纯文本模型能力**——所需的关键词、表格布局、标题创作以及表情符号均为模型内部已知的常识范围，无需联网检索专业或小众资料。  \n5. **无不可完成的要求**——生成表格、评估关键词适配性、创作标题并加入表情符号均为文本生成任务，全部可在一次响应中完成，未出现超出模型能力的限制。  \n6. **逻辑正确**——指令的顺序（先表格后标题）与内容（关键词评估后使用其生成标题）保持一致，逻辑上不冲突。  \n7. **内部一致**——没有相互矛盾的约束，例如既要求不使用第一人称，又未在其他地方要求使用此类代词，指令内部保持一致。  \n8. **材料完整**——指令已提供所有必要的输出结构要求（表格列数、标题层级、表情符号数量），无需额外材料。  \n9. **信息充分**——关键词数量（5 个）与评价维度已明确，足以支撑后续标题创作。  \n10. **单轮可完成**——全部信息可以在一次回复中完整呈现，无需多轮交互获取补充数据。  \n11. **简洁明了**——指令已对数量要求作出直接说明，未在括号中追加冗余解释或示例，符合简洁性要求。  \n\n综上所述，指令在意图、语义、逻辑、可行性等方面均满足高质量用户指令的全部评判标准。\n\n最终结论：[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": false
+    }
+  },
+  {
+    "id": 1,
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Organize the entire presentation content into 3 to 5 distinct <section> blocks, each dedicated to a single core industry impacted by globalization. Please include data in the form of Excel tables and charts, and use between 2 and 4 total emoji characters to highlight particularly notable data trends across these materials. Additionally, provide R code to show the correlation between international trade and economic growth in developing countries. The total number of inline code snippets wrapped in single backticks across the entire response must be 0; all code must be presented in full fenced code blocks to ensure readability of longer workflow segments. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "constraints": [
+      {
+        "constraint": "Organize the entire presentation content into 3 to 5 distinct <section> blocks, each dedicated to a single core industry impacted by globalization.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Use between 2 and 4 total emoji characters to highlight particularly notable data trends across these materials.",
+        "category": {
+          "scope": "Condition(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The total number of inline code snippets wrapped in single backticks across the entire response must be 0; all code must be presented in full fenced code blocks to ensure readability of longer workflow segments.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Prohibition"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": false,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "不通过",
+              "reasoning": "**分析**：\n\n1. **从用户指令中识别的全部格式要求**  \n   - **A1**：将整个演示内容组织为 **3‑5 个** `<section>` 区块，每个区块聚焦于受全球化影响的单一核心产业。  \n   - **A2**：在材料中使用 **2‑4 个** emoji 来突出显著的数据趋势。  \n   - **A3**：**禁止**使用单个反引号包裹的 **inline code**（数量必须为 0），**所有**代码必须以 **完整的 fenced code block** 形式出现。  \n   - **A4**：**提供 R 代码**，用于展示国际贸易与发展中国家经济增长的相关性（即响应中必须出现至少一个 R 代码块）。  \n   - **A5**：**包含 Excel 表格和图表** 形式的数据（即响应中必须出现至少一个 Excel 表格和/或图表结构）。  \n\n   其中 A4 与 A5 属于 **结构量 / 清单命中** 类的格式要求：它们规定了必须出现特定结构（R 代码块、Excel 表格/图表），虽然未给出明确计数，但依据规则 5，这类“非计数式”要求同样必须被抽取。\n\n2. **抽取列表的内容**  \n   - **抽取 1**：对应 A1（3‑5 个 `<section>` 区块），完整且准确。  \n   - **抽取 2**：对应 A2（2‑4 个 emoji），完整且准确。  \n   - **抽取 3**：对应 A3（inline 代码为 0，全部使用 fenced block），完整且准确。  \n\n   抽取列表 **未** 包含 A4（提供 R 代码）和 A5（包含 Excel 表格和图表）的任何表述。\n\n3. **对照抽取完整性要求**  \n   - **条件 1（完整提取）**：抽取缺失了两条明确的格式要求（A4 与 A5），因此不完整。  \n   - **条件 5（非计数式要求）**：A5 属于“在回复中必须出现特定结构（Excel 表格/图表）”的非计数式要求，未被抽取，进一步证明抽取不合格。  \n   - **其他条件**（准确性、无重复、表述清晰）对已抽取的三项均满足，但由于缺失，整体判断仍为不通过。\n\n4. **结论**  \n   抽取结果未覆盖用户指令中的全部格式约束，特别是缺少对 **R 代码** 与 **Excel 表格/图表** 的要求，故不满足“完整提取”这一关键条件。\n\n**最终结论**：[[不通过]]"
+            },
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "不通过",
+              "reasoning": "**分析**：\n\n1. **用户指令中的全部格式要求**  \n   - **组织结构**：把整个演示内容划分为 **3 到 5 个** `<section>` 块，每块对应一个受全球化影响的核心行业。  \n   - **表情符号**：在材料中使用 **2 到 4 个** emoji。  \n   - **代码呈现**：**禁止**使用单反引号包裹的 **inline code**（数量必须为 0），所有代码必须以 **完整的 fence 代码块** 形式出现。  \n   - **数据呈现**：必须 **以 Excel 表格和图表的形式** 提供数据。  \n   - **代码内容**：需 **提供 R 代码**，用于展示国际贸易与发展中国家经济增长的相关性。  \n   - **输出形式**：整个回答应 **以 PowerPoint 演示文稿的形式**（即对应的结构化 PowerPoint 内容）呈现。  \n   - （其余如结论性个人观点等属于内容而非格式要求，故不计入。）\n\n2. **抽取列表中出现的格式要求**  \n   - **id 1**：对应 “3 到 5 个 `<section>` 块” ✔  \n   - **id 2**：对应 “2 到 4 个 emoji” ✔  \n   - **id 3**：对应 “inline code 数量为 0，所有代码必须使用 fence 代码块” ✔  \n\n   **缺失的格式要求**  \n   - **Excel 表格和图表**：用户明确要求以 Excel 表格和图表呈现数据，这属于 **结构容器（结构量）** 的计量需求（至少出现 1 张表格和 1 张图表），在抽取列表中未出现。  \n   - **R 代码**：用户要求提供 **R 语言代码**，这属于 **结构容器/清单命中量**（必须出现至少一个 R 代码块），抽取列表只涉及代码块的呈现方式，没有保证必须出现 R 代码。  \n   - **PowerPoint 演示文稿整体形式**：用户的核心请求是 *“创建一个 PowerPoint 演示文稿”*，这是一条 **计量范围为等于 1 的格式要求**（整个回复必须是一个 PowerPoint 结构），同样未被抽取。  \n\n3. **对抽取质量的逐条检视**  \n   - **完整性**：抽取列表未覆盖用户指令中的 **Excel/图表**、**R 代码**、**PowerPoint 整体形式** 三条格式要求，显著遗漏。  \n   - **准确性**：已抽取的三条与指令一致，未出现错误；但因为遗漏，整体准确性不满足。  \n   - **唯一性**：抽取的三条之间无重复。  \n   - **表述完整与无歧义**：已抽取的三条表述清晰。  \n   - **非计数式格式要求**：PowerPoint 整体形式、Excel/图表、R 代码都属于非计数式但可归类的格式需求，均未被抽取，违反第 5 条。  \n   - **粒度**：即使允许合并或拆分，抽取仍应覆盖所有需求，目前明显缺失。\n\n4. **结论**  \n   依据规则 **1‑6**，抽取结果未完整覆盖用户指令中的全部格式要求，因而不符合通过标准。\n\n**最终结论**：[[不通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**：\n\n**1. 意图非常明确**  \n用户要求“创建一个关于全球化对不同行业影响的 PowerPoint 演示”，并给出了具体的组织方式（3‑5 个 `<section>` 块），数据形式（Excel 表格与图表）、装饰要求（2‑4 个 emoji）、技术实现（提供 R 代码显示贸易与经济增长的相关性），以及格式约束（禁止单行反引号代码、全部使用代码块）和结尾的个人观点。整体意图清晰、指向唯一。\n\n**2. 语义非常清晰，语言通顺、流畅、容易理解，没有歧义**  \n句子结构完整，指令中的每一项（章节划分、数据呈现、emoji 用量、代码格式、结论立场）都明确说明，没有模糊词汇或歧义表达，语言自然流畅。\n\n**3. 不存在错误内容或错误信息**  \n指令本身不包含任何事实性错误或矛盾的陈述，仅是对输出形式的要求，符合真实可实现的任务范围。\n\n**4. 不超出无法联网的纯文本模型的能力范围**  \n- **PowerPoint 内容**：模型可以提供完整的演示文稿文字、结构化的章节标题、要点列表和说明，这些均为纯文本，可直接复制到 PPT 中。  \n- **Excel 表格**：可以以 CSV 或 Markdown 表格形式输出表格数据，文本模型能够完整生成。  \n- **图表**：模型可以给出描述性文字并提供绘图所需的数据及 R 代码，实际图形由用户在本地运行代码生成，符合纯文本模型的输出能力。  \n- **R 代码**：在代码块中提供完整的脚本亦是文本输出。  \n因此，所有要求均可在不联网且仅输出文本的前提下完成。\n\n**5. 不存在无法完成的要求**  \n- 0 个单行 `` `code` `` 的限制可以通过只使用 ```r ```（或 ``` ```）代码块实现。  \n- Emoji 数量限定（2‑4）可以自行控制。  \n- “3‑5 个 `<section>` 块”是可实现的结构化要求。  \n- 给出个人观点也是模型可完成的任务。  \n没有任何超出模型能力的不可实现需求。\n\n**6. 不存在错误的逻辑或混乱的逻辑**  \n指令内部的约束互不冲突：章节数目、emoji 数量、代码块形式、数据形式、以及结论立场都是独立且兼容的，逻辑上没有矛盾。\n\n**7. 内部逻辑一致**  \n所有子任务（章节组织 → 数据呈现 → emoji 标记 → R 代码 → 结论）可以按顺序、线性完成，彼此之间不冲突，形成完整的演示稿。\n\n**8. 指令内容完整、材料完整**  \n用户提供了完整的任务描述和所有格式约束，未留下需要额外补充的材料或信息空白。模型只需自行创作合理的示例数据，即满足“材料完整”。\n\n**9. 用户指令提供了所有需要的数据或信息**  \n虽然没有提供具体行业或统计数字，指令明确要求模型自行生成这些数据；因此不缺少任何外部信息，模型拥有完成任务所需的全部上下文。\n\n**10. 无需多轮交互**  \n所有输出（章节文本、表格、图表描述、R 代码、结论）均可在一次回复中一次性提供，无需后续询问或澄清。\n\n**11. 简洁明了**  \n指令本身已足够明确，未出现冗余的括号说明或举例，符合“尽量避免在有关数量的要求后加入额外解释”的要求。\n\n**综合判断**：该用户指令在意图、表述、信息完整性、可实现性以及内部一致性方面全部符合评判标准，没有违背任意一条条件。因此，它是 **高质量** 的指令。\n\n**最终结论**：[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**  \n下面逐条对照用户指令所列的 11 项高质量标准进行评估：\n\n1. **意图非常明确**  \n   - 用户要求生成一份关于全球化对不同行业影响的 PowerPoint 演示稿，并给出具体的结构（3‑5 个 `<section>` 块），每块聚焦一个核心行业；提供 Excel 表格与图表数据、使用 2‑4 个表情符号、附上 R 代码展示贸易‑增长相关性、并在结尾给出个人观点。整体目标清晰、一目了然。  \n\n2. **语义非常清晰，语言通顺、流畅、容易理解，没有歧义**  \n   - 指令表达严谨，使用的限定词（如“3 到 5 个 distinct `<section>` blocks”“2 到 4 total emoji characters”“inline code snippets wrapped in single backticks must be 0”等）都意义明确，没有模糊或歧义的表述。  \n\n3. **不存在错误内容或错误信息**  \n   - 指令中未包含任何事实错误或误导性信息，仅为任务需求的描述。  \n\n4. **不超出无法联网的纯文本模型的能力范围**  \n   - 任务仅涉及文字内容、示例性数据表、R 代码以及文字形式的图表说明，均可在纯文本环境下生成。模型不需要实时查询外部数据库或下载文件即可完成。  \n\n5. **不存在无法完成的要求**  \n   - 所有要求（设定章节数量、使用特定数量的表情、使用 fenced code block、提供 R 代码、给出个人观点）都是模型可以实现的，即使难度较高，也不属于不可实现的范畴。  \n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 条件之间相互独立且不冲突，例如“使用 2‑4 个表情符号”与“代码必须全部放在 fenced block 中”并不互相排斥。逻辑顺畅。  \n\n7. **内部逻辑一致，不存在矛盾的逻辑或要求**  \n   - 章节数量、表情数量、代码格式、以及结论表达均没有相互矛盾之处，指令整体上是一致的。  \n\n8. **指令内容完整、材料完整，不存在内容缺失或材料缺失等问题**  \n   - 用户已完整列出所有输出要素（章节结构、表格与图表、表情数量、R 代码、结论），无需额外信息才能完成任务。  \n\n9. **用户指令提供了所有需要的数据或信息**  \n   - 任务本身要求生成数据和代码，用户并未需要提供外部数据，故不存在信息缺失问题。  \n\n10. **用户指令中不能存在需要多轮交互才能解决的问题**  \n    - 所有需求均可一次性在一次完整回复中交付：章节内容、示例表格、图表描述、R 代码块以及结论意见。无需后续追问。  \n\n11. **简洁明了**  \n    - 虽然指令较长，但每个约束都直接表述，没有冗余的解释、举例或额外定义。符合简洁要求。  \n\n**综合评估**：用户指令在意图、表述、逻辑、可实现性等方面全部符合高质量标准，未出现任何违反项。  \n\n**最终结论**：[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": false
+    }
+  },
+  {
+    "id": 2,
+    "prompt": "Write a list of Nintendo consoles. Start your response with a level 1 Markdown heading following the format \"Complete Chronological List of NINTENDO Video Game Consoles (1977–2024)\", with 1 to 2 key industry terms in the heading written in all uppercase. Organize your content into H2-level sections for home consoles and handheld consoles, and include 1 to 2 comparative tables within each H2 section to visualize launch year and global sales data for each console. Ensure you use more underscore characters than asterisk characters throughout your entire response.",
+    "constraints": [
+      {
+        "constraint": "Start your response with a level 1 Markdown heading following the format \"Complete Chronological List of NINTENDO Video Game Consoles (1977–2024)\", with 1 to 2 key industry terms in the heading written in all uppercase.",
+        "category": {
+          "scope": "Position(Structural Element) -> Traversal(Word)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Organize your content into H2-level sections for home consoles and handheld consoles, and include 1 to 2 comparative tables within each H2 section to visualize launch year and global sales data for each console.",
+        "category": {
+          "scope": "Traversal(Structural Block) -> Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Ensure you use more underscore characters than asterisk characters throughout your entire response.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Comparison"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析：**\n\n1. **用户指令中的所有格式要求**  \n   - **标题格式**：需以一级 Markdown 标题 (`#`) 开头，标题文字必须完全匹配 `\"Complete Chronological List of NINTENDO Video Game Consoles (1977–2024)\"`，且在标题中要有 **1 到 2 个关键行业术语** 以全大写形式出现。  \n   - **层级结构与表格数量**：内容必须分为两个二级标题（H2）章节——“home consoles”和“handheld consoles”。在每个 H2 章节内部必须放置 **1 到 2 张对比表格**，表格用于展示每款主机的 **发行年份** 与 **全球销量**。  \n   - **字符使用比例**：整篇回复中 **下划线字符 (`_`) 的数量必须多于星号字符 (`*`) 的数量**。\n\n   这些均属于 **格式要求**（涉及作用域、作用目标、计量范围），不包含内容需求（如“写出任天堂主机列表”）或情感/风格要求，符合抽取范围。\n\n2. **抽取列表与指令的对应关系**  \n   - **id 1** 完整复现了标题格式的所有要点：  \n     - “Start your response with a level 1 Markdown heading” → 明确了作用域为“回复全局”，作用目标为“一级标题文本”。  \n     - “following the format …” → 给出了准确的标题文字。  \n     - “with 1 to 2 key industry terms in the heading written in all uppercase” → 明确了计量范围（上下界 1‑2）及目标（全大写关键术语）。  \n   - **id 2** 完整覆盖了章节组织与表格数量的要求：  \n     - “Organize your content into H2‑level sections for home consoles and handheld consoles” → 作用域为“遍历(结构块)”，作用目标为“H2 章节”。  \n     - “include 1 to 2 comparative tables within each H2 section to visualize launch year and global sales data for each console” → 计量范围为上下界 1‑2，作用目标为“对比表格”，且明确了表格内部需要展示的属性（发行年份、全球销量），这属于结构量‑表格成员数的统计。  \n   - **id 3** 完整捕捉了字符比例的约束：  \n     - “Ensure you use more underscore characters than asterisk characters throughout your entire response.” → 作用域为“回复全局”，作用目标为“下划线字符”和“星号字符”，计量范围为**比较关系**（下划线 > 星号），完全对应指令。  \n\n3. **未遗漏的格式要求**  \n   - 除了上述三条，指令中没有其他可归类为格式要求的约束（如 JSON、结束语、排序等）。  \n   - “Write a list of Nintendo consoles.” 属于内容需求，不属于格式要求，故不需抽取。  \n   - 所有非计数式的格式需求（标题必须是一级 Markdown 标题、章节必须为 H2）均已在 id 1 与 id 2 中以自然语言形式完整呈现。\n\n4. **重复与虚构**  \n   - 三条约束内容各不相同，既无语义重复也无完全相同的条目。  \n   - 均源自用户指令，未出现虚构的约束。\n\n5. **表述完整、无歧义**  \n   - 每条约束均使用用户原话或与原话同义的完整句子，表达清晰，阅读者能够直接判断是否满足。  \n\n**结论**：抽取结果完整、准确、无遗漏、无重复，且全部覆盖了用户指令中的格式要求。\n\n**最终结论**：[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析：**\n\n1. **完整性**  \n   - 用户指令中涉及的格式要求只有三项：  \n     a. 以指定文字的一级 Markdown 标题开头，标题中需包含 1‑2 个全大写的关键行业词；  \n     b. 内容分为 “home consoles” 与 “handheld consoles” 两个二级（H2）章节，并在每个章节内放置 1‑2 张对比表格，展示发售年份与全球销量；  \n     c. 整篇回复中下划线字符的数量必须多于星号字符的数量。  \n   - 格式要求列表恰好包含这三条约束，未遗漏任何指令中的格式要求。\n\n2. **准确性**  \n   - **约束 1** 完整复述了标题的层级、固定文本、以及“1 到 2 个全大写关键行业词”的要求。  \n   - **约束 2** 精确捕获了章节层级（H2）、章节名称（home consoles、handheld consoles）以及每个章节内“1 到 2 张比较表格”用于展示“launch year”和“global sales”的需求。  \n   - **约束 3** 正确表达了“使用的下划线字符数量要多于星号字符数量”的全局字符使用限制。  \n   - 与原指令相比，表述内容一致，未产生歧义。\n\n3. **无重复**  \n   - 三条约束各自关注不同的格式维度（标题、章节与表格、字符使用），彼此之间不存在内容相同或语义等价的重复。\n\n4. **表述清晰、无歧义**  \n   - 每条约束均以完整句子呈现，使用了指令原文中的关键短语，阅读者能够直接理解对应的实现要求。\n\n5. **非计数式格式要求的覆盖**  \n   - 约束 1 与约束 3 都是典型的“等于关系”或“上下界关系”（标题必须出现一次、下划线数量必须大于星号数量），已在列表中完整出现。  \n   - 这些要求虽未给出具体数值，但都有明确的可判定目标（标题的唯一性、字符计数的比较），符合分类体系对非计数式格式要求的归类。\n\n6. **粒度**  \n   - 列表把每一个独立的格式约束单独列出，粒度适当，且未出现合并后导致信息缺失的情况。\n\n综上，格式要求列表 **完整、准确、无遗漏、无重复、表述明确**，符合所有判断标准。\n\n**最终结论：** [[通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**：\n\n**1. 意图非常明确**  \n用户要求生成一段 Markdown 文本，包含：  \n- 以特定格式的一级标题开头；  \n- 两个二级标题（主机和掌机）；  \n- 每个二级标题下 1‑2 张对比表，展示每款主机的上市年份和全球销量；  \n- 整篇使用下划线字符的数量多于星号字符的数量。  \n意图清晰，可直接执行。\n\n**2. 语义非常清晰，语言通顺、流畅、容易理解**  \n指令的每一步都用明确的动词（“Write”, “Start”, “Organize”, “include”, “Ensure”）描述，未出现歧义或语病。\n\n**3. 不存在错误内容或错误信息**  \n指令本身不携带任何事实性错误，只是对输出形式的要求。\n\n**4. 不超出无法联网的纯文本模型的能力范围**  \n列出任天堂主机及其上市年份、全球销量属于公开的、常识性的信息，模型在已知的训练数据中即可获取，完全不需要联网。\n\n**5. 不存在无法完成的要求**  \n- “使用更多下划线而非星号”是可控的字符计数要求，完全可以满足。  \n- 提供 1‑2 张表格、标题、章节等都是 Markdown 的常规输出，模型能够生成。  \n因此没有任何不可完成的部分。\n\n**6. 不存在错误的逻辑或混乱的逻辑**  \n指令的结构层次（标题 → 二级节 → 表格）逻辑顺畅，前后要求不冲突。\n\n**7. 内部逻辑一致**  \n标题格式、章节划分、表格数量以及字符使用要求之间不存在矛盾，可同步实现。\n\n**8. 指令内容完整、材料完整**  \n虽然用户未提供具体年份和销量数据，但这些数据属于公开信息，模型能够自行填充。指令已给出全部需要的结构与格式要求，材料上没有缺失。\n\n**9. 用户指令提供了所有需要的数据或信息**  \n所需的外部数据（主机名单、年份、销量）是常识性信息，模型本身即可提供，故无需用户额外提供。\n\n**10. 不需要多轮交互**  \n全部信息（标题、章节、表格、字符计数）均可在单轮答复中完成，无需来回询问。\n\n**11. 简洁明了**  \n指令在说明要求时已足够具体，没有冗余的解释或举例；对数量的限定（例如“1 to 2 tables”）也直接写明，无需额外括号说明。\n\n综合以上 11 条评估标准，用户的指令在意图、语义、可行性、完整性以及执行路径上均符合高质量指令的所有条件。\n\n**最终结论**：[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**  \n1. **意图明确**：用户要求输出一份包含任天堂主机与掌机的列表，采用特定的 Markdown 标题格式、分章节、并在每个章节中提供 1–2 个对比表格，且整体文字中下划线字符数要多于星号字符数。意图清晰，不含模糊或多义之处。  \n2. **语义清晰、语言通顺**：指令使用的英文表达完整且符合常规语法，“Start your response with a level 1 Markdown heading …”，以及“Ensure you use more underscore characters than asterisk characters throughout your entire response”等句子均易于理解，无歧义或语病。  \n3. **不存在错误内容或错误信息**：指令本身未包含任何事实陈述或错误信息，仅是格式与内容的要求。  \n4. **在纯文本模型能力范围内**：列出任天堂历代主机与掌机、提供发行年份与全球销量（这些信息在公开知识库中可获），以及生成 Markdown 表格和计数下划线/星号的字符比例，都属于不需要联网的语言模型可以完成的任务。  \n5. **不存在无法完成的要求**：  \n   - “1–2 个对比表格” 是具体且可实现的数量。  \n   - “使用更多下划线字符而非星号字符” 只需要在正文中多插入下划线即可实现，未超出模型能力。  \n   - 其它所有格式要求（标题、章节层级、表格等）均可在一次回复中完成。  \n6. **逻辑正确、无混乱**：各步骤间相互独立且顺序合理，标题、章节、表格的层级关系明确，无冲突。  \n7. **内部逻辑一致**：没有出现相互矛盾的指令，例如既要求使用下划线又要求使用星号的数量相等的情况。  \n8. **指令内容完整、材料完整**：用户提供了完整的输出结构要求（标题格式、章节划分、表格数量、字符使用比例），不缺少任何必要信息。  \n9. **提供了所有必要信息**：生成列表与表格所需的数据（主机名称、发行年份、全球销量）属于公开常识，可由模型自行检索，无需用户额外提供。  \n10. **单轮即可完成**：所有需求（标题、章节、表格、字符计数）均能在一次回复中全部呈现，无需多轮交互。  \n11. **简洁明了**：指令虽较长，但没有在数量要求后添加冗余的括号解释或举例，符合简洁原则。  \n\n综合上述 11 条评价标准，用户指令在每一点上均符合高质量的要求，未出现任何违背条件的因素。\n\n**最终结论**：[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": true
+    }
+  },
+  {
+    "id": 3,
+    "prompt": "In the field of finance, answer the following questions regarding Python-enabled ethical machine learning for investment decision-making: first, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Second, is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task? Start your response with a short introductory paragraph outlining your core analytical framework, and ensure at least 4 technical terms used in this opening paragraph are written in all uppercase letters. The third sentence of your entire response must contain 2 to 3 numeric values referencing baseline performance metrics for ethical screening models in investment scenarios. The third content block of your response must be an ordered list of actionable implementation steps for ethical ML pipeline governance, containing exactly 5 distinct items. Do not use backtick characters to format any text as inline code in your response; refer to all functions, variables, and code elements in standard prose without special formatting. Ensure there are exactly 6 parenthesis characters present in your entire response.",
+    "constraints": [
+      {
+        "constraint": "回复以概述核心分析框架的简短引言段落开头，且该引言段落中使用的至少4个技术术语以全大写形式书写",
+        "category": {
+          "scope": "Position(Paragraph) -> Traversal(Word)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "回复的第三句包含2-3个指代投资场景中伦理筛查模型基线性能指标的数值",
+        "category": {
+          "scope": "Position(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "回复的第三个内容块为伦理ML流程治理的可执行实施步骤有序列表，包含恰好5个不同条目",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "回复中不得使用反引号字符将任何内容格式化为行内代码，所有函数、变量和代码元素均以标准 prose 形式提及",
+        "category": {
+          "scope": "Traversal(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "全文恰好包含6个括号字符",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析：**\n\n1. **逐条比对用户指令中的格式要求与抽取列表**  \n   - **要求 A**：*“Start your response with a short introductory paragraph outlining your core analytical framework, and ensure at least 4 technical terms used in this opening paragraph are written in all uppercase letters.”*  \n     - 抽取列表第 1 条正是对该要求的完整表述，强调“简短引言段落开头”且“至少4个技术术语以全大写形式书写”。  \n   - **要求 B**：*“The third sentence of your entire response must contain 2 to 3 numeric values referencing baseline performance metrics for ethical screening models in investment scenarios.”*  \n     - 抽取列表第 2 条对应，指出“第三句包含2‑3个…数值”，与原指令含义完全一致。  \n   - **要求 C**：*“The third content block of your response must be an ordered list … containing exactly 5 distinct items.”*  \n     - 抽取列表第 3 条明确说明“第三个内容块为…有序列表，恰好5个不同条目”，吻合原意。  \n   - **要求 D**：*“Do not use backtick characters to format any text as inline code … all functions, variables, and code elements in standard prose.”*  \n     - 抽取列表第 4 条对应，指出“不得使用反引号字符 … 以标准 prose 形式提及”。  \n   - **要求 E**：*“Ensure there are exactly 6 parenthesis characters present in your entire response.”*  \n     - 抽取列表第 5 条写为“全文恰好包含6个括号字符”，完全覆盖该计数约束（括号即圆括号）。\n\n2. **完整性**  \n   - 用户指令仅包含上述五格式约束（均属于可归入分类体系的“计量范围”）。抽取列表囊括了全部五条，没有遗漏任何指令中的格式需求。\n\n3. **准确性**  \n   - 每条抽取的约束在措辞、范围、计量方式上均与原指令保持意义等价。未出现歧义或误解，例如第 1 条已明确是“简短引言段落”，第 3 条明确指出是“有序列表”，而不是无序列表。  \n\n4. **无重复**  \n   - ID 1‑5 各自对应不同的需求，内容上不存在相同或语义等价的重复抽取。  \n\n5. **表述完整、清晰**  \n   - 抽取的每条约束均为完整的自然语言句子，指代明确（如“第三句”“第三个内容块”等），没有省略关键信息，也没有产生歧义。  \n\n6. **非计数式格式需求**  \n   - 所有抽取的需求均可归入计量范围（≥ 4 个大写术语、2‑3 个数值、恰好5 项、禁止使用反引号、恰好6 个括号），因此已全部被识别并列出，未遗漏。  \n\n7. **粒度**  \n   - 抽取的粒度适中：每条皆对应指令中单独的格式约束，未出现过度拆分或合并导致信息丢失的情况。  \n\n综上所述，抽取结果满足 **完整提取**、**准确对应**、**无重复**、**表述清晰**、**未遗漏非计数式需求** 的全部评判标准。\n\n**最终结论：**[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "分析：\n1. **完整性**  \n   - 用户指令中列出的所有格式要求为：\n     1. 以简短的引言段落开头，且该段落中至少出现 4 个全大写的技术术语。  \n     2. 整篇回复的第三句必须包含 2‑3 个数值，这些数值应指代投资场景中伦理筛查模型的基线性能指标。  \n     3. 回复的第三个内容块必须是一个有序列表，列出伦理 ML 流程治理的可执行步骤，且恰好有 5 条不同的条目。  \n     4. 禁止使用反引号（\\`）对任何内容进行行内代码格式化，所有函数、变量及代码元素需以普通 prose（普通文字）方式出现。  \n     5. 整篇回复中必须恰好出现 6 个括号字符（包括左、右括号）。  \n\n   - 格式要求列表共提供了 5 条约束，分别对应上述 5 条要求，未遗漏任何指令中的格式约束。\n\n2. **准确性**  \n   - **约束 1**：列表中描述“回复以概述核心分析框架的简短引言段落开头，且该引言段落中使用的至少4个技术术语以全大写形式书写”，与用户指令中“Start your response with a short introductory paragraph outlining your core analytical framework, and ensure at least 4 technical terms used in this opening paragraph are written in all uppercase letters”完全一致。  \n   - **约束 2**：列表中表述“回复的第三句包含2-3个指代投资场景中伦理筛查模型基线性能指标的数值”，与用户指令中“the third sentence of your entire response must contain 2 to 3 numeric values referencing baseline performance metrics for ethical screening models in investment scenarios”对应无误。  \n   - **约束 3**：列表中写明“回复的第三个内容块为伦理ML流程治理的可执行实施步骤有序列表，包含恰好5个不同条目”，正好对应用户指令中关于“third content block … ordered list … exactly 5 distinct items”。  \n   - **约束 4**：列表中指出“回复中不得使用反引号字符将任何内容格式化为行内代码，所有函数、变量和代码元素均以标准 prose 形式提及”，与指令中“Do not use backtick characters to format any text as inline code … refer … in standard prose”相符。  \n   - **约束 5**：列表中写明“全文恰好包含6个括号字符”，对应指令中“Ensure there are exactly 6 parenthesis characters present in your entire response”。  \n\n   所有约束的表述均与原指令的内容、意图保持一致。\n\n3. **无重复**  \n   - 列表中的 5 条约束各自唯一，内容上没有重复或语义等价的条目。  \n\n4. **表述完整、清晰、无歧义**  \n   - 每条约束使用完整的中文句子，明确指出作用范围、对象以及计量要求，阅读时不存在歧义。  \n   - 例如约束 1 明确要求“简短引言段落开头”以及“至少4个技术术语全大写”，既限定了位置又限定了形式；约束 5 明确计量范围为“恰好6个括号字符”。  \n\n5. **非计数式格式要求已覆盖**  \n   - 约束 1 与约束 4 属于非计数式的格式要求（分别是“段落必须以特定方式开头并含大写术语”和“禁止使用特定字符”。）在系统中被视为计量范围为“等于关系”或“禁止关系”，已在列表中完整呈现。  \n\n6. **粒度符合容差**  \n   - 列表对用户指令的多个细分要求（如段落位置、技术术语大小写）合并在约束 1 中，符合系统允许的“合并成一个约束”做法；其它约束均为单一、独立的格式需求，粒度恰当。  \n\n综上所述，格式要求列表完整、准确、无遗漏、无重复、表述清晰，并且满足所有判定准则。\n\n最终结论：[[通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "分析：  \n1. **意图明确**：用户要求提供关于在金融领域使用 Python 实现伦理机器学习的措施、是否可以自动化识别并排除不符合伦理的投资以及相应代码，并对回复的结构、格式、用词以及符号数量作出精确限定，意图清晰且具体。  \n2. **语义清晰**：指令的每一项要求（如“在开头段落中至少使用 4 个全大写技术术语”“第三句必须包含 2‑3 个数值”“整个回复恰好出现 6 个括号字符”等）都表述完整、没有歧义，语句通顺。  \n3. **内容无错误**：指令本身不包含错误信息或事实性错误，仅是对输出形式的约束。  \n4. **在模型能力范围内**：所有所需信息（伦理机器学习的通用措施、示例 Python 代码、基准指标）均为公开、常识性知识，模型无需联网或查阅专有资源即可生成。  \n5. **无无法完成的要求**：虽然要求精确控制括号数量和特定句式较为苛刻，但这些是可实现的写作约束，并不超出模型的文字生成能力；因此不存在不可完成的请求。  \n6. **逻辑正确**：各项要求之间不存在逻辑冲突，例如“第三内容块是有序列表”并不与“第三句必须包含数值”相矛盾，所有约束能够在同一篇回复中统一满足。  \n7. **内部一致**：指令的结构（简介‑解释‑代码‑有序列表）自洽，未出现相互冲突的指令。  \n8. **材料完整**：用户已提供足够的上下文（金融、伦理机器学习、Python）以及所有格式化需求，未缺少任何必需信息。  \n9. **提供所有必要数据**：指令不依赖外部数据，所有所需信息均由模型自行生成。  \n10. **单轮完成**：模型完全可以在一次响应中满足所有文字、代码及格式约束，无需多轮交互。  \n11. **简洁明了**：指令已经足够具体，未在数量要求后通过括号、例子等额外解释，符合简洁性要求。  \n\n综上，用户指令在意图、语义、逻辑、可实现性等方面均满足评价标准的全部条款。\n\n最终结论：[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**：\n\n1. **意图明确**  \n   – 用户希望得到一段关于金融领域使用 Python 实现伦理机器学习的完整回答，并且对回答的结构、用词、格式、代码呈现方式以及特定字符数量提出了详尽的约束。整体意图清晰，无歧义。\n\n2. **语义清晰、语言通顺**  \n   – 指令采用完整的英文句式，表达准确。所列的各项要求（如 “在开头段落中使用至少 4 个全大写技术术语”、 “第三句必须包含 2‑3 个数值”、 “第三内容块为恰好 5 项的有序列表”等）语义明确，未出现语言病句或歧义表达。\n\n3. **不存在错误内容或错误信息**  \n   – 指令本身不包含任何事实性错误或误导信息，仅为写作/排版要求，符合事实。\n\n4. **不超出纯文本模型能力**  \n   – 所需的全部输出均为文字描述和 Python 代码示例，均在不联网的语言模型可完成的范围内，无需查阅外部文献或专有数据。\n\n5. **不存在无法完成的要求**  \n   – 所有约束（如不使用反引号、精确控制括号数量、在特定句子中插入数值、提供有序列表等）虽然对排版提出了较高要求，但在一次性生成文本的前提下是可实现的，并未要求模型具备超出其能力的专业工程计算或实时数据访问。\n\n6. **无错误或混乱的逻辑**  \n   – 各项约束相互独立且不冲突。即使需要在同一篇回答中同时满足 “第三句包含数值” 与 “第三内容块为有序列表”，也可以通过合理的段落划分实现，逻辑上并无矛盾。\n\n7. **内部逻辑一致**  \n   – 从整体结构（引言段 → 主体阐述 → 按要求的有序列表）到细节约束（大写技术词、括号数量、代码格式）均保持一致，满足内部自洽性。\n\n8. **指令内容完整、材料完整**  \n   – 用户已经提供了全部的写作要求与格式限制，未出现缺失或需要额外补充的信息。\n\n9. **提供了所有必要数据或信息**  \n   – 需要的数值可自行设定为示例基准指标，代码可基于常见的 Python 库（如 pandas、scikit‑learn）编写，故不依赖外部数据。\n\n10. **无需多轮交互**  \n    – 所有要求均可在一次回复中完整呈现，模型无需后续询问即可完成任务。\n\n11. **简洁明了**  \n    – 虽然约束较多，但每一条都直接陈述，未出现冗余的解释或不必要的附加说明，符合简洁性的要求。\n\n**综合评估**：该指令在意图、语义、可实现性、逻辑连贯性以及完整性等方面均满足高质量指令的全部标准，未出现任何违背（如模糊、冲突、超出能力、需要多轮交互等）的问题。\n\n**最终结论**：[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": true
+    }
+  },
+  {
+    "id": 4,
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same. Each sentence in your response must contain exactly one numerical digit. Include 2 to 4 explanatory points following the structure \"[PHP Code Module Name]: [Functional role of the module in the grade management system]\" to clearly elaborate on the core modules of your implementation. Organize each core operation step under its own level-3 Markdown heading, and ensure no headings contain any numeric digits. Ensure you explicitly cover exactly the following four core required components, with no additional core components included: multi-subject grade entry form logic, weighted overall grade calculation function, subject comment rule mapping table, input data validation module. End your explanation with a summary paragraph starting with \"To summarize\", and ensure this paragraph contains between 2 and 4 sentences.",
+    "constraints": [
+      {
+        "constraint": "Each sentence in your response must contain exactly one numerical digit.",
+        "category": {
+          "scope": "Traversal(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Include 2 to 4 explanatory points following the structure \"[PHP Code Module Name]: [Functional role of the module in the grade management system]\" to clearly elaborate on the core modules of your implementation.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Organize each core operation step under its own level-3 Markdown heading, and ensure no headings contain any numeric digits.",
+        "category": {
+          "scope": "Traversal(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Ensure you explicitly cover exactly the following four core required components, with no additional core components included: multi-subject grade entry form logic, weighted overall grade calculation function, subject comment rule mapping table, input data validation module.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "End your explanation with a summary paragraph starting with \"To summarize\", and ensure this paragraph contains between 2 and 4 sentences.",
+        "category": {
+          "scope": "Condition(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Intervals"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**\n\n1. **用户指令中所有的格式要求**  \n   - **数值约束**：每句话必须恰好包含一个数字。  \n   - **点数约束**：需提供 2‒4 条解释性要点，且每条要点必须遵循 “[PHP Code Module Name]: …” 的结构。  \n   - **标题结构约束**：每个核心操作步骤必须使用 **level‑3 Markdown 标题**（即 `###`），并且标题内不得出现任何数字。  \n   - **核心组件覆盖约束**：必须**仅**覆盖四个指定的核心组件：  \n     1. multi‑subject grade entry form logic  \n     2. weighted overall grade calculation function  \n     3. subject comment rule mapping table  \n     4. input data validation module  \n     任何额外的核心组件均不允许出现。  \n   - **结尾段落约束**：解释结束时必须有一个以 “To summarize” 开头的段落，且该段落的句数必须在 2‒4 之间。  \n\n   以上共计 **五条** 格式要求，且全部可以归入本分类体系（计量范围为绝对范围或上下界关系），不涉及风格、情感等非计数式内容。\n\n2. **抽取列表的对应情况**  \n   - **ID 1** 完全对应“每句话恰好包含一个数字”。  \n   - **ID 2** 完全对应“包含 2‒4 条解释性要点，结构为 `[PHP Code Module Name]: …`”。  \n   - **ID 3** 完全对应“每个核心操作步骤使用 level‑3 Markdown 标题，且标题不含数字”。  \n   - **ID 4** 完全对应“仅覆盖上述四个核心组件，不得出现其他组件”。  \n   - **ID 5** 完全对应“以 ‘To summarize’ 开头的段落，句数在 2‒4 之间”。  \n\n   每一条抽取均使用了用户指令的原文表述，意义与原指令完全一致，且没有遗漏或遗漏的非计数式要求。\n\n3. **重复与冗余检查**  \n   - 五条约束在内容、语义上均不重复，也没有出现用户指令中未出现的虚构要求。  \n\n4. **完整性、准确性、歧义性**  \n   - 抽取的每条约束都完整、清晰、无歧义，能够直接映射到分类体系的对应子类（计量范围 → 绝对范围/上下界、作用目标 → 文本容量/字面量等），并且覆盖了用户指令中的全部格式要求。  \n\n5. **非计数式格式要求**  \n   - 用户指令中不存在除上述五条之外的非计数式格式要求（如“整个回复必须是 JSON 对象”等），因此不存在遗漏。  \n\n**结论**：抽取结果完整、准确、无重复，满足所有评判条件。\n\n**最终结论**：[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析：**  \n用户指令中包含的全部格式要求如下（逐条对应）：\n\n1. **每句必须恰好包含一个数字**  \n   - 形式：对每个句子（作用域）统计其中的数字字符（作用目标），计量范围为“等于 1”。  \n   - 已在列表 id 1 中完整抽取。\n\n2. **提供 2~4 条说明点，且每条须遵循 “[PHP Code Module Name]: [Functional role …]” 的结构**  \n   - 形式：在整体回复（作用域）统计说明点的数量（作用目标），计量范围为“区间 2‑4”。  \n   - 已在列表 id 2 中完整抽取。\n\n3. **将每个核心操作步骤放在单独的三级 Markdown 标题下，且标题中不能出现数字**  \n   - 形式：对所有核心步骤（作用目标），要求其所在的标题层级为三级（结构约束）且标题字符集不含数字（计量范围“禁止数字出现”）。  \n   - 已在列表 id 3 中完整抽取，虽将“三级标题”与“无数字”两要素合并为一条，但题目允许合并抽取，不构成遗漏。\n\n4. **必须恰好覆盖以下四个核心组件，且不得出现其他核心组件**  \n   - 作用域：整个回复；作用目标：核心组件的出现情况；计量范围：**等于 4**，且集合必须正好等于给出的四项列表。  \n   - 已在列表 id 4 中完整抽取。\n\n5. **以 “To summarize” 开头的摘要段落，段落须包含 2~4 句**  \n   - 作用域：回复的结尾段落；作用目标：句子数量；计量范围：区间 2‑4，并且必须以特定开头。  \n   - 已在列表 id 5 中完整抽取。\n\n检查是否还有未抽取的格式要求：用户指令中除上述以外的内容（如“详细步骤”“修改 PHP 代码”等）均为**内容**需求，不属于格式约束。因此不存在遗漏。\n\n检查抽取是否准确、无重复、表述清晰：五条约束均对应原指令的完整陈述，未出现语义重复或虚构约束，表述完整且无歧义。\n\n综上，抽取结果满足所有判断标准。\n\n**最终结论：[[通过]]**"
+            }
+          ]
+        },
+        "quality": {
+          "pass": false,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "低质量",
+              "reasoning": "**分析**：\n\n1. **意图明确**：用户希望得到一套关于如何修改 PHP 代码以实现教师为每个学生输入多科成绩、计算总体成绩并生成对应评论的详细步骤，并对实现过程进行特定格式的说明。意图相对清晰。\n\n2. **语义清晰**：指令的语言基本通顺，要求的格式（每句包含恰好一个数字、三级 Markdown 标题、2‑4 条解释点、四个固定核心组件、以 “To summarize” 开头的 2‑4 句总结）说明明确，但其中对数字的使用限制在实际输出中会带来一定难度。\n\n3. **错误内容**：指令本身未包含错误信息。\n\n4. **模型能力范围**：纯文本模型完全能够根据常识给出实现思路、代码示例以及格式化的说明，因而不超出模型能力。\n\n5. **可完成性**：虽然格式限制严格（每句恰好一个数字、标题不得含数字等），但这些限制并非不可实现，属于高难度的写作要求，故仍属于可完成范围。\n\n6. **逻辑错误**：指令内部逻辑基本一致，没有自相矛盾的地方。\n\n7. **内部一致性**：要求的四个核心组件、解释点数量、标题层级、总结段落句数等均相互兼容。\n\n8. **内容完整性**：指令要求对 **“给定的 PHP 代码”** 进行修改，但实际指令中并未提供任何代码片段或示例。没有提供必要的原始代码，导致无法针对具体实现进行针对性修改，而只能给出抽象的通用方案。\n\n9. **数据提供情况**：如上所述，缺少关键的输入材料（即待修改的 PHP 代码），导致用户未提供完成任务所必须的全部信息。\n\n10. **单轮完成**：由于缺少原始代码，若要提供符合要求的具体修改建议，助理可能需要进一步询问并获取代码，这违背了“一轮内完成”原则。\n\n11. **简洁明了**：指令本身已经相当冗长且在格式要求上加入了大量附加限制，虽然表达明确，但在“简洁”方面稍显不足。不过此点并不影响整体质量评估的结论。\n\n综合以上评估，**关键问题在于第 8、9、10 条**：指令未提供完成任务所必需的代码材料，导致信息缺失且可能需要多轮交互来补全。按照判断标准，一旦任意一条不满足，即判定为低质量指令。\n\n**最终结论**：[[低质量]]"
+            },
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "低质量",
+              "reasoning": "**分析**  \n1. **意图明确**：用户希望得到一套修改 PHP 代码以实现多科目成绩录入、加权总分计算、生成科目评论的详细步骤，并对输出格式提出多项限制。整体意图清晰。  \n2. **语义清晰**：指令表述较为完整，但对“给定的 PHP 代码”并未提供实际代码，导致后续步骤的具体实现缺少关键上下文，语义上存在一定模糊。  \n3. **错误信息**：指令本身未包含错误信息。  \n4. **模型能力范围**：提供概念性步骤和格式要求属于纯文本模型可完成的范围。  \n5. **可完成性**：要求“每句正好包含一个数字”“标题不能含数字”“仅列出 4 个核心组件”等格式限制虽苛刻，但并非模型无法实现，故不构成不可完成的要求。  \n6. **逻辑错误**：格式约束之间基本不冲突（标题不是句子，可不含数字），整体逻辑自洽。  \n7. **内部一致性**：指令内部没有相互矛盾的要求。  \n8. **内容完整性**：指令缺少关键材料——即用户所指的“给定的 PHP 代码”。若没有该代码，无法针对具体实现给出有针对性的修改方案，只能提供泛泛的建议，这违背了“内容完整、材料完整”的要求。  \n9. **数据提供**：用户未提供必须的代码或其他具体信息，导致无法在单轮交互中给出完整、具体的修改方案。此点直接违背了“用户指令提供了所有需要的数据或信息”。  \n10. **单轮完成**：即便接受提供通用方案，也可以在一轮内完成，但由于缺少必要的代码，若要给出精准答案则需要后续询问，违背“一轮内完成”的原则。  \n11. **简洁性**：指令在数量要求后未使用冗余的括号解释，符合简洁性要求。  \n\n综合来看，最关键的缺陷在于**缺少必要的代码材料**，导致指令未满足“提供全部所需数据/信息”的条件，从而使其整体质量不达标。\n\n**最终结论**：[[低质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": false
+    }
+  },
+  {
+    "id": 5,
+    "prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand? Your response must open with a lead line containing exactly 2 em dashes. Split your answer into two core sections under Level 2 Markdown headings: one covering the best interview preparation methods, and one covering the top three in-demand skills. Present each section’s core claims as bulleted points under its heading, where the second bullet point under the preparation methods section must contain a Markdown table with the column headers \"Prep Stage\", \"Time Allocation (Hours)\", and \"Key Deliverable\" with no additional columns. For the in-demand skills section, use 2 to 3 of the following terms as subheadings to organize your content: technical proficiency, behavioral alignment, cultural fit, problem-solving agility, communication clarity. Include 2 to 3 distinct structured supplementary elements across your response: you may add a quoted block of a hiring manager’s firsthand interview feedback, a bulleted list of common last-minute prep mistakes, or a bolded callout of the most overlooked preparation step. Organize the three in-demand skills in order of the number of syllables in their common name from fewest to most.",
+    "constraints": [
+      {
+        "constraint": "Your response must open with a lead line containing exactly 2 em dashes.",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Split your answer into two core sections under Level 2 Markdown headings, present each section’s core claims as bulleted points under its heading, where the second bullet point under the preparation methods section must contain a Markdown table with the column headers \"Prep Stage\", \"Time Allocation (Hours)\", and \"Key Deliverable\" with no additional columns.",
+        "category": {
+          "scope": "Position(Structural Block) -> Position(Structural Element)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "For the in-demand skills section, use 2 to 3 of the following terms as subheadings to organize your content: technical proficiency, behavioral alignment, cultural fit, problem-solving agility, communication clarity.",
+        "category": {
+          "scope": "Position(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Checklist",
+          "secondary_target": "Presence",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Include 2 to 3 distinct structured supplementary elements across your response: you may add a quoted block of a hiring manager’s firsthand interview feedback, a bulleted list of common last-minute prep mistakes, or a bolded callout of the most overlooked preparation step.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Organize the three in-demand skills in order of the number of syllables in their common name from fewest to most.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Relations",
+          "secondary_target": "Ordering Relations",
+          "range": "Comparison"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析：**  \n用户指令中涉及的格式要求如下：\n\n1. **开头行**：必须以一行包含**恰好 2 个 em‑dash**的引导语开头。  \n2. **两大章节**：回答需**恰好分为两段**，且**使用 Level 2（##）Markdown 标题**分别标记——一段阐述面试准备方法，一段列出三大在需求技能。  \n3. **项目符号**：每段标题下的核心论点必须以**项目符号列表**呈现。  \n4. **表格要求**：在“准备方法”段落的**第二个项目符号**必须是**Markdown 表格**，且表格仅包含列标题 **“Prep Stage” / “Time Allocation (Hours)” / “Key Deliverable”**，不可出现其他列。  \n5. **技能子标题**：在“在需求技能”段落中，需要**从 5 个给定词中选取 2‒3 个**作为**子标题**来组织内容。  \n6. **补充结构元素**：整体回答中需出现**2‒3 个不同的结构化补充元素**，可选的三种形式为：引用块（招聘经理反馈）、项目符号列表（临近准备错误）或加粗的提示语（最易忽视的准备步骤）。  \n7. **技能顺序**：所列的**三项技能**必须**按名称音节数从少到多排序**。\n\n抽取列表中对应的 5 条约束为：\n\n| id | 抽取内容 |\n|---|-----------|\n| 1 | “Your response must open with a lead line containing exactly 2 em dashes.” → 完全覆盖要求 1。 |\n| 2 | “Split your answer into two core sections under Level 2 Markdown headings, present each section’s core claims as bulleted points under its heading, where the second bullet point under the preparation methods section must contain a Markdown table with the column headers … with no additional columns.” → 同时覆盖要求 2、3、4。 |\n| 3 | “For the in-demand skills section, use 2 to 3 of the following terms as subheadings to organize your content: …” → 完全覆盖要求 5。 |\n| 4 | “Include 2 to 3 distinct structured supplementary elements across your response: you may add a quoted block …, a bulleted list …, or a bolded callout ….” → 完全覆盖要求 6。 |\n| 5 | “Organize the three in-demand skills in order of the number of syllables in their common name from fewest to most.” → 完全覆盖要求 7，并且暗含“恰好三项技能”。 |\n\n逐项核对：\n\n- **完整性**：抽取的 5 条约束覆盖了用户指令中出现的全部格式需求（1‑7），未遗漏任何要求。  \n- **准确性**：每条抽取的文字与指令中的表述保持一致，含义完全相同。  \n- **唯一性**：各抽取项之间无重复或语义等价的冗余，且未添加指令未出现的虚构约束。  \n- **表述完整、无歧义**：每条约束均为完整句子，明确指示所需的格式行为。  \n- **非计数式需求**：指令中不存在需单独归类的非计数式格式需求（如“必须以 JSON 对象结束”等），因此未遗漏。  \n- **粒度**：抽取将多个相邻的子需求（章节划分、项目符号、表格）合并为一条（id 2），符合“在保证完整、无歧义的前提下，粒度不做要求”的规定。\n\n综上，抽取结果满足所有评判标准。\n\n**最终结论：**[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**  \n用户指令中涉及的所有格式要求如下（逐条对应）：\n\n1. **开头需包含恰好两枚 em‑dash 的引导行** – 与列表中 **id 1** 完全对应。  \n2. **分为两段、使用二级 Markdown 标题**，**每段均以项目符号列出核心要点**，且 **在“准备方法”段的第二个项目符号中必须放置仅包含三列（“Prep Stage”“Time Allocation (Hours)”“Key Deliverable”）的 Markdown 表格** – 这些全部被 **id 2** 的约束完整捕获。该约束同时涵盖了“二级标题”“项目符号列表”“表格列数限制”等所有子要求。  \n3. **在“需求技能”段使用 2‑3 个指定关键词作子标题**（technical proficiency、behavioral alignment、cultural fit、problem‑solving agility、communication clarity） – 完全对应 **id 3**。  \n4. **在整篇回复中加入 2‑3 项不同的结构化补充元素**（可选：引用块、列举常见失误的项目符号列表、加粗的重点提示） – 与 **id 4** 的描述一致。  \n5. **对三项需求技能按照名称音节数从少到多排序** – 与 **id 5** 完全对应。  \n\n从用户指令检查，未发现其他可归类为“格式要求”的要素。例如，“列出最受青睐的三项技能”属于内容需求，而非格式限制；“最佳面试准备方式”同理。因此上述五条已覆盖全部格式约束。  \n\n**完整性**：所有指令中的格式约束均已出现于抽取列表，没有遗漏。  \n**准确性**：每条抽取的文字与原指令的表述意义一致，未产生歧义。  \n**唯一性**：列表中的五条各自对应不同的约束，未出现内容相同或语义等价的重复。  \n**无冗余**：未包含用户指令未提出的虚构约束。  \n**非计数式要求**：列表已将“开头必须包含 2 枚 em‑dash”“表格列数限制”“仅使用 2‑3 个子标题”“2‑3 项补充元素”“按音节数排序”这些隐含的计数关系全部转化为可归类的格式约束，未遗漏。  \n\n综上所述，抽取结果满足任务对“完整、准确、无重复、无遗漏非计数式格式要求”的全部判定标准。\n\n**最终结论**：[[通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "分析：  \n**1. 意图非常明确**  \n用户明确要求：① 给出技术行业求职面试的最佳准备方法；② 列出当前需求最高的三个技能；③ 在回答中遵循一系列具体的格式约束（开头两枚 em‑dash、二级标题、项目符号、特定表格、使用限定的子标题词、按音节数排序、提供 2‑3 种结构化补充元素等）。意图清晰，无歧义。\n\n**2. 语义非常清晰，语言通顺、流畅**  \n指令使用完整的英文句子描述需求，结构严谨，约束条件表达明确（如“exactly 2 em dashes”“second bullet point must contain a Markdown table”等），不存在语病或难以理解的表达。\n\n**3. 不存在错误内容或错误信息**  \n指令本身不包含事实陈述，仅是任务说明，没有错误信息。\n\n**4. 不超出无法联网的纯文本模型的能力范围**  \n所需信息（面试准备技巧、技术行业热门技能、对这些技能的音节计数）均属于常识性或基于模型已学习的公开数据，模型无需联网即可生成。格式要求（Markdown、表格、子标题等）同样在纯文本模型的能力范围内。\n\n**5. 不存在无法完成的要求**  \n所有格式约束（开头两枚 em‑dash、二级标题、项目符号、表格、子标题、音节排序、2‑3 种补充元素）都可以在一次输出中实现，属于可完成的高难度但非不可完成的任务。\n\n**6. 不存在错误的逻辑或混乱的逻辑**  \n指令的各部分相互独立且不冲突：先给出准备方法，再给出需求技能；表格放在第二个项目符号中，子标题选自限定词列表并用于组织技能；音节排序与子标题的使用不矛盾，整体逻辑连贯。\n\n**7. 内部逻辑一致，无矛盾冲突**  \n指令未出现相互排斥的条件。例如，要求“使用 2‑3 个词作为子标题”并不与“组织三项技能”冲突，因为可以用 2‑3 个子标题来分组这三项技能。所有约束可以同时满足。\n\n**8. 指令内容完整、材料完整**  \n用户提供了完整的任务描述和所有格式细节，没有遗漏关键信息或需要额外材料。\n\n**9. 用户指令提供了所有需要的数据或信息**  \n任务不需要外部数据；仅需模型自行生成面试技巧和热门技能的描述，所需的仅是指令中已经给出的限制条件。\n\n**10. 无需多轮交互**  \n一次性输出即可完成全部要求（文字、表格、子标题、补充元素），不存在需要后续提问或确认的环节。\n\n**11. 简洁明了，未在数量要求后加入多余解释**  \n指令在数量约束（如“2‑3 个子标题”“2‑3 种补充元素”）后未使用括号或额外说明，仅直接给出限制，符合简洁原则。\n\n综上所述，用户指令在意图、语义、逻辑、可实现性、完整性等方面均符合质量评判的全部 11 条标准。\n\n最终结论：[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**  \n1. **意图非常明确**：用户明确要求提供两部分内容（面试准备方法与需求技能），并细化了排版、结构、附加元素等具体要求。  \n2. **语义非常清晰**：指令表达完整，无歧义或语病，各项格式限定（如“正好2个em破折号”“第二条要包含表格”等）都清楚可辨。  \n3. **不存在错误内容或错误信息**：指令本身不包含任何错误信息，只是对输出形式的约束。  \n4. **不超出纯文本模型能力范围**：所需信息（面试准备技巧、技术行业当前需求的技能）属于公开的、常识性知识，模型无需联网即可生成。  \n5. **不存在无法完成的要求**：虽然格式要求较多（标题层级、表格、子标题、补充元素），但全部在模型可执行的范围内；即使“引用招聘经理的第一手反馈”，模型可创作合理的示例，不违背可完成性。  \n6. **不存在错误的逻辑或混乱的逻辑**：所有约束相互兼容——先写两级标题、在准备方法章节的第二项放表格、在需求技能章节使用2‑3个给定的子标题并按照音节数排序三项技能，这些逻辑不冲突。  \n7. **内部逻辑一致**：指令内部没有相互矛盾的要求，能够在一次回复中同时满足所有条件。  \n8. **指令内容完整、材料完整**：用户已提供全部必要的约束与指示，不缺少任何关键信息。  \n9. **用户提供了所有需要的数据或信息**：所有格式、结构、内容的要求均已在指令中说明。  \n10. **无需多轮交互**：一次完整的文本输出即可完成所有指定任务，符合“一轮内完成”。  \n11. **简洁明了**：虽然指令较长，但在数量或格式说明后未出现冗余的括号解释或举例，符合简洁性要求。  \n\n综上所述，该用户指令在意图、语言、逻辑、可实现性、完整性等方面均符合高质量指令的全部评判标准。\n\n**最终结论**：[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": true
+    }
+  },
+  {
+    "id": 6,
+    "prompt": "I’m writing a story about a mysterious forest, and I need a description that balances eerie and inviting tones. Craft your description with every word you use falling between 3 and 10 characters in length. Structure the content into multiple paragraphs, each opening with the phrase “The hush of the undergrowth” and closing with the phrase “thrum of the unseen”. Each paragraph’s final sentence must sit on its own standalone line. Use 1 to 3 horizontal rules (---) to separate distinct scene sections throughout the text. The third paragraph must contain exactly 7 sentences; when you read the nth character of the nth sentence in this paragraph sequentially, they must spell the word “WANDERER”. The third sentence from the end of your entire description must contain more numerical digits than commas. Ensure the very last character of the entire response is a lowercase “g”.",
+    "constraints": [
+      {
+        "constraint": "Every word used in the description must be between 3 and 10 characters in length.",
+        "category": {
+          "scope": "Traversal(Word)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Each paragraph must open with the phrase “The hush of the undergrowth” and close with the phrase “thrum of the unseen”.",
+        "category": {
+          "scope": "Traversal(Paragraph)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Each paragraph’s final sentence must sit on its own standalone line.",
+        "category": {
+          "scope": "Traversal(Paragraph) -> Position(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Use 1 to 3 horizontal rules (---) to separate distinct scene sections throughout the text.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The third paragraph must contain exactly 7 sentences, and the nth character of the nth sentence in this paragraph must spell “WANDERER” when read sequentially.",
+        "category": {
+          "scope": "Position(Paragraph) -> Position(Sentence) -> Position(Character)",
+          "primary_target": "Relations",
+          "secondary_target": "Positional Relations",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "The third sentence from the end of the entire description must contain more numerical digits than commas.",
+        "category": {
+          "scope": "Position(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "The very last character of the entire response must be a lowercase “g”.",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Surface",
+          "range": "Equality"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**  \n下面逐条对照用户指令，检查抽取列表是否完整、准确、无遗漏或重复，并判断是否满足所有评判标准。\n\n1. **每个单词长度 3‑10 字符**  \n   - 用户指令：“Craft your description with every word you use falling between 3 and 10 characters in length.”  \n   - 抽取 id 1 完全对应该要求。  \n\n2. **段落开头与结尾固定短语**  \n   - 用户指令：“each opening with the phrase “The hush of the undergrowth” and closing with the phrase “thrum of the unseen”.”  \n   - 抽取 id 2 正确捕获了该约束。  \n\n3. **段落最后一句单独成行**  \n   - 用户指令：“Each paragraph’s final sentence must sit on its own standalone line.”  \n   - 抽取 id 3 完全对应。  \n\n4. **水平分割线数量 1‑3**  \n   - 用户指令：“Use 1 to 3 horizontal rules (---) to separate distinct scene sections throughout the text.”  \n   - 抽取 id 4 完全捕获。  \n\n5. **第三段落的句数及字符映射**  \n   - 用户指令：“The third paragraph must contain exactly 7 sentences; when you read the nth character of the nth sentence in this paragraph sequentially, they must spell the word “WANDERER”.”  \n   - 抽取 id 5 包含了**两层**要求（句数为 7、字符映射为 “WANDERER”），符合可合并粒度的规则。  \n\n6. **倒数第三句的数字/逗号比较**  \n   - 用户指令：“The third sentence from the end of your entire description must contain more numerical digits than commas.”  \n   - 抽取 id 6 完全对应。  \n\n7. **整体响应的最后一个字符为小写 “g”**  \n   - 用户指令：“Ensure the very last character of the entire response is a lowercase “g”.”  \n   - 抽取 id 7 完全对应。  \n\n**潜在遗漏检查**  \n- **“Structure the content into multiple paragraphs”**：虽然指令中明确要求“multiple paragraphs”，但该需求已经被 **id 5**（必须存在第三段落）所蕴含，因而在满足第三段落的前提下必然出现多个段落。根据评判准则“允许合并”，该需求已被间接覆盖，不视为遗漏。  \n- 其余所有非计数式、计数式、结构式要求均已在抽取列表中出现，且没有出现重复或虚构的约束。  \n\n**重复或歧义**  \n- 每条抽取均唯一，无语义重复。  \n- 表述完整、清晰，未出现歧义。  \n\n**结论**  \n抽取列表完整覆盖了用户指令中的所有格式要求，且每条均准确、无重复、表述明确，满足所有判定条件。\n\n**最终结论**：[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析：**\n\n**一、用户指令中的全部格式要求逐条对照抽取列表**  \n| 序号 | 用户指令中的格式要求 | 抽取列表对应项 | 是否完全覆盖 |\n|------|----------------------|----------------|--------------|\n| 1 | “每个单词的长度在 3‑10 字符之间” | id 1 – “Every word used in the description must be between 3 and 10 characters in length.” | 完全匹配 |\n| 2 | “将内容结构化为多个段落，每段以 ‘The hush of the undergrowth’ 开头并以 ‘thrum of the unseen’ 结尾” | id 2 – “Each paragraph must open with the phrase … and close with the phrase ….” | 完全匹配（“多个”隐含在后续的第三段要求中） |\n| 3 | “每段的最后一句必须单独成行” | id 3 – “Each paragraph’s final sentence must sit on its own standalone line.” | 完全匹配 |\n| 4 | “使用 1‑3 条水平分隔线（---）把不同的场景段落分开” | id 4 – “Use 1 to 3 horizontal rules (---) to separate distinct scene sections throughout the text.” | 完全匹配 |\n| 5 | “第三段必须恰好有 7 句；第 n 句的第 n 个字符顺序拼出 ‘WANDERER’” | id 5 – “The third paragraph must contain exactly 7 sentences, and the nth character of the nth sentence in this paragraph must spell ‘WANDERER’ when read sequentially.” | 完全匹配（两条子约束已合并在同一条目中） |\n| 6 | “整体描述倒数第三句中数字字符的数量要多于逗号的数量” | id 6 – “The third sentence from the end of the entire description must contain more numerical digits than commas.” | 完全匹配 |\n| 7 | “整个回复的最后一个字符必须是小写的 ‘g’” | id 7 – “The very last character of the entire response must be a lowercase ‘g’.” | 完全匹配 |\n\n**二、是否遗漏了任何格式要求**  \n- *“多个段落”*：该要求的实现必须满足后续的 “第三段” 约束，因而已经在 id 5 中被隐式强制（至少需要三段）。因此不存在独立的、未被覆盖的计数约束。  \n- 其余所有非计数式的格式要求（特定短语、行格式、字符限制、分隔线数量等）均已在抽取列表中出现。  \n- 未出现任何与内容、情感、写作风格相关的要求，这类需求不属于格式约束，故不计入抽取。\n\n**三、抽取的准确性**  \n每条抽取的自然语言描述与用户原句的意义、范围、细节保持完全一致；没有增删、曲解或引入额外限定。例如，第 5 条同时表达了“恰好 7 句”以及“nth‑character 拼写 WANDERER”，两个子约束均未遗漏或误写。\n\n**四、重复与冗余**  \n列表中 7 条条目各自唯一，未出现内容相同或语义等价的重复抽取，也未出现用户未提出的虚构约束。\n\n**五、表述完整、清晰、无歧义**  \n每条 constraint 用完整的句子阐述，关键字、范围、对象均明确标示，阅读者能够直接对应到原指令，无需额外解释。\n\n**六、非计数式格式要求的覆盖**  \n- 开头/结尾短语、最后字符 ‘g’ 均属于等于 1 的计量范围（必须出现），已被抽取。  \n- “每段的最后一句单独成行” 属于结构位置约束，也已完整抽取。  \n\n**七、整体符合抽取质量判断的全部 6 条条件**  \n1. **完整提取** – 所有格式约束均被覆盖。  \n2. **准确提取** – 各约束意义与指令完全一致。  \n3. **无重复** – 每条唯一。  \n4. **表述明确** – 语言完整、无歧义。  \n5. **无遗漏的非计数式约束** – 已全部捕获。  \n6. **粒度合规** – 允许的合并（如第 5 条合并两子约束）符合要求。\n\n**结论**：抽取结果符合全部评判标准。  \n\n**最终结论：[[通过]]**"
+            }
+          ]
+        },
+        "quality": {
+          "pass": false,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "低质量",
+              "reasoning": "**分析：**  \n1. **意图明确** – 用户希望得到一段符合多项格式与文字长度约束的森林描写，意图清晰。  \n2. **语义清晰** – 句子结构完整，各项要求（词长、段落开头/结尾短语、段落末句单独成行、水平分隔线、特定段落句数、字符对应拼写、数字与逗号比例、结尾字符）表达明确，无歧义。  \n3. **错误内容** – 指令本身不包含错误信息。  \n4. **模型能力范围** – 所有要求均为纯文本生成、无需联网或外部专业知识，属于语言模型可完成的范围。  \n5. **是否存在无法完成的要求** – 此项出现冲突：  \n   - 第三段必须恰好 **7 句**。  \n   - “读取第 *n* 句的第 *n* 个字符，顺序拼出单词 **‘WANDERER’**”。  \n   - 单词 **WANDERER** 长度为 **8**（W‑A‑N‑D‑E‑R‑E‑R），而 7 句只能提供 7 个字符（1‑2‑3‑4‑5‑6‑7）。因此不可能在仅有 7 句的情况下拼出 8‑字符的单词。此矛盾使得该要求 **不可实现**。  \n6. **错误或混乱的逻辑** – 如上所述，句数与拼写长度之间的逻辑冲突构成错误逻辑。  \n7. **内部逻辑一致性** – 因第 5、6 条的冲突，整体指令内部逻辑不一致。  \n8. **内容完整性** – 除了冲突之外，其他材料齐全，但因不可实现的约束导致整体无法完整满足。  \n9. **提供所需数据** – 所需的所有文字材料均已由用户提供。  \n10. **单轮可完成** – 若约束不冲突，可在单轮完成；但冲突导致单轮也无法满足所有条件。  \n11. **简洁明了** – 文字表达简洁，没有多余的解释性括号。  \n\n综合上述，对照质量判断标准，指令在 **第5、6、7条** 明显不满足，属于 **低质量** 的用户指令。\n\n**最终结论：**[[低质量]]"
+            },
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "低质量",
+              "reasoning": "**分析：**  \n\n1. **意图非常明确**  \n   - 用户明确要求生成一段兼具诡异与诱人氛围的森林描写，并列出多项细致的格式与内容约束。意图清晰。\n\n2. **语义非常清晰，语言通顺、流畅、容易理解**  \n   - 句子结构完整，各约束条目表述明确，基本无歧义。整体语义上可以理解用户到底想要什么。\n\n3. **不存在错误内容或错误信息**  \n   - 在约束中出现 **直接矛盾**：  \n     - “每个单词的长度必须在 3 到 10 个字符之间”。  \n     - 同时要求 **每段以短语 “The hush of the undergrowth” 开头**。该短语中包含单词 “of”（2 字符）和 “undergrowth”（11 字符），显然违背了“每个单词长度 3‑10”的规定。  \n   - 这一矛盾导致指令本身包含错误信息（不可能同时满足两条约束），所以不符合此项要求。\n\n4. **不超出无法联网的纯文本模型的能力范围**  \n   - 所有要求均为文本生成与格式控制，理论上在离线模型能力范围内。但因为已有矛盾，实际完成仍不可行。\n\n5. **不存在无法完成的要求**  \n   - 由于第 3 条中发现的矛盾，使得任务 **不可完成**（除非放弃其中一条约束），属于“无法完成的要求”。因此此项不满足。\n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 正如第 3 条所指出的，要求的逻辑自相冲突（单词长度限制 vs 必须出现超出限制的单词），构成了逻辑错误。\n\n7. **内部逻辑一致，不存在矛盾的逻辑或要求**  \n   - 已出现明确矛盾（单词长度 vs 固定短语），因此不满足此条件。\n\n8. **指令内容完整、材料完整，不存在内容缺失或材料缺失**  \n   - 在约束层面提供了足够信息，但因内部矛盾导致实际“完整可实现的材料”缺失，属于隐性缺失。\n\n9. **用户指令提供了所有需要的数据或信息**  \n   - 所需的文本材料全部由用户提供（如短语、目标单词等），但因矛盾导致无法使用这些完整信息完成任务。\n\n10. **指令中不能存在需要多轮交互才能解决的问题**  \n    - 任务本意是一次性完成的，但因为矛盾，模型只能在单轮内报告无法完成，仍属满足此条。但整体质量已因前述问题受损。\n\n11. **简洁明了**  \n    - 约束虽多，但表达相对简洁，没有冗余的解释性括号或举例，基本符合此项。\n\n**综合评判：**  \n虽然意图明确、语言清晰、信息完整，但指令内部包含 **不可调和的逻辑矛盾**（单词长度限制与必须出现的固定短语），导致任务在实际执行层面 **无法完成**。这违反了“不存在无法完成的要求”和“内部逻辑一致”两项关键标准。因此，该指令不符合高质量指令的全部条件。\n\n**最终结论：**[[低质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": false
+    }
+  },
+  {
+    "id": 7,
+    "prompt": "What are the benefits of using a humidifier in your home, and how does it work? Organize all content into no more than 6 paragraphs to avoid overwhelming readers. Ensure your entire response contains exactly 160 words in total, with all technical terms, measurement units, and brand references counted as single words when tallying. Answer across all paragraphs with every sentence containing exactly 8 words. Ensure the 80th to 150th characters of your response contain a total of 2 to 3 hyphens linking humidity-related terms. Any paragraph longer than 80 words must contain at least 3 numerical digits. Across all sentences ending in a period, mention the term “moisture” between 2 and 4 times total. The last word of the second sentence in your response must be exactly 8 characters long.",
+    "constraints": [
+      {
+        "constraint": "Organize all content into no more than 6 paragraphs.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Your entire response contains exactly 160 words in total, with all technical terms, measurement units, and brand references counted as single words when tallying.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Every sentence in each paragraph contains exactly 8 words.",
+        "category": {
+          "scope": "Traversal(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "The 80th to 150th characters of your response contain a total of 2 to 3 hyphens linking humidity-related terms.",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "Any paragraph longer than 80 words must contain at least 3 numerical digits.",
+        "category": {
+          "scope": "Condition(Paragraph)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Across all sentences ending in a period, the term “moisture” appears between 2 and 4 times total.",
+        "category": {
+          "scope": "Condition(Sentence)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The last word of the second sentence in your response is exactly 8 characters long.",
+        "category": {
+          "scope": "Position(Sentence) -> Position(Word)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "Equality"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**  \n以下逐条对照用户指令中的格式要求与抽取列表，检查抽取是否满足判定标准。\n\n1. **用户指令中的所有格式要求**  \n   - **段落数量**： “Organize all content into no more than 6 paragraphs …”  \n   - **整体字数**： “Ensure your entire response contains exactly 160 words in total, with all technical terms, measurement units, and brand references counted as single words when tallying.”  \n   - **句子长度**： “Answer across all paragraphs with every sentence containing exactly 8 words.”  \n   - **字符区间内连字符数量**： “Ensure the 80th to 150th characters of your response contain a total of 2 to 3 hyphens linking humidity‑related terms.”  \n   - **长段落的数字出现**： “Any paragraph longer than 80 words must contain at least 3 numerical digits.”  \n   - **特定词出现次数**： “Across all sentences ending in a period, mention the term ‘moisture’ between 2 and 4 times total.”  \n   - **第二句末尾单词长度**： “The last word of the second sentence in your response must be exactly 8 characters long.”  \n\n2. **抽取列表对照**  \n   - **id 1** 完全对应段落数量限制。  \n   - **id 2** 完全对应整体字数限制，并保留了计数方式的说明（技术术语、计量单位、品牌名计为单词）。  \n   - **id 3** 对应句子长度限制（每句恰好8词）。  \n   - **id 4** 对应字符区间内连字符数量的要求，并保留了“linking humidity‑related terms”的描述。  \n   - **id 5** 对应长段落必须包含至少3个数字的要求。  \n   - **id 6** 对应以句号结尾的句子中出现“moisture”2‑4次的限制。  \n   - **id 7** 对应第二句末尾单词长度为8字符的限制。  \n\n   每一条抽取的约束均与原指令的文字内容保持一致，未出现遗漏、歧义或错误的表述。\n\n3. **重复检查**  \n   - 列表中的七条约束在语义上均互不重复；没有出现同一约束的两次或等价重复。  \n\n4. **完整性与非计数式要求**  \n   - 所有用户指令中出现的格式约束均为计数式或可映射至计数式（如“exactly 8 characters long”视作等于关系的计数），抽取列表已完整覆盖。  \n   - 用户指令中不存在其他非计数式的格式要求（如“必须是JSON对象”“必须以双引号包裹”等），因此不存在遗漏。  \n\n5. **表述清晰、无歧义**  \n   - 每条抽取约束均使用完整的自然语言句子，能够直接对应原指令，无需额外解释。  \n\n综合以上五条判定标准，抽取列表**完整、准确、无重复、表述明确、且未遗漏任何格式约束**。\n\n**最终结论**：[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**：\n\n1. **完整性**  \n   - 用户指令中包含的所有格式约束为：  \n     ① 段落数量不超过 6；  \n     ② 整体字数恰好 160（计数规则已说明）；  \n     ③ 每个句子恰好 8 词；  \n     ④ 第 80‑150 个字符之间出现 2‑3 个连字符并用于连接湿度相关词汇；  \n     ⑤ 任意段落若超过 80 词，则必须至少包含 3 个数字字符；  \n     ⑥ 所有以句号结尾的句子中，“moisture” 出现次数在 2‑4 次之间；  \n     ⑦ 整篇回复的第二句的最后一个词长度恰好为 8 字符。  \n   - 格式要求列表（id 1‑7）恰好对应上述七条约束，未出现遗漏。\n\n2. **准确性**  \n   - 每条抽取的约束在文字表述上与原指令意义完全一致：  \n     - id 1 与“no more than 6 paragraphs”对等；  \n     - id 2 包含“exactly 160 words”以及计数时将技术词、单位、品牌视为单词的说明；  \n     - id 3 正确捕捉“every sentence containing exactly 8 words”；  \n     - id 4 对应“80th to 150th characters … 2 to 3 hyphens linking humidity‑related terms”；  \n     - id 5 对应“Any paragraph longer than 80 words … at least 3 numerical digits”；  \n     - id 6 对应“Across all sentences ending in a period … “moisture” between 2 and 4 times”；  \n     - id 7 对应“last word of the second sentence … exactly 8 characters”。  \n   - 没有出现歧义或意义偏差的抽取。\n\n3. **唯一性**  \n   - 列表中每条约束仅出现一次，且内容之间不存在语义重复。没有加入用户未提出的虚构约束。\n\n4. **表述完整、清晰、无歧义**  \n   - 每条 `constraint` 都是完整的自然语言陈述，能够直接用于判断回复是否满足对应格式要求，表达明确。\n\n5. **非计数式格式要求的覆盖**  \n   - 列表已将所有非计数式但仍属于计量范围的约束（如第 6 条关于 “moisture” 出现次数的上下界、第 7 条关于词长的等于关系）完整抽取，未遗漏。\n\n6. **粒度**  \n   - 列表的粒度与指令的自然分段对应，既不出现过细的拆分也不出现过粗的合并，符合“在保证完整、无歧义前提下，粒度不作硬性要求”的规则。\n\n综上所述，抽取结果在完整性、准确性、唯一性、表达清晰度及对所有格式约束的覆盖方面均满足判定标准。\n\n**最终结论**：[[通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析：**  \n\n1. **意图非常明确**  \n   - 用户希望得到一段关于“使用加湿器的好处及其工作原理”的介绍，并对篇幅、段落数、字数、句子结构、字符范围、标点、数字、特定词汇出现次数以及特定单词长度等提出了细致的格式要求。意图清晰，无歧义。  \n\n2. **语义非常清晰，语言通顺、流畅、容易理解**  \n   - 各项要求（不超过 6 段、总计 160 词、每句 8 词、80‑150 字符之间出现 2‑3 个连字符、段落超过 80 词时需含 ≥3 个数字、在句点结尾的句子中出现 “moisture” 2‑4 次、第二句最后一个词恰好 8 字符）表达明确，虽然约束较多，但语义上不存在歧义或语病。  \n\n3. **不存在错误内容或错误信息**  \n   - 指令全部为对输出格式的约束，没有涉及事实性错误或误导信息。  \n\n4. **不超出无法联网的纯文本模型的能力范围**  \n   - 任务仅需生成公开的、常识性文字（加湿器的好处与工作原理），并在内部自行计数词数、字符数、标点等。无需检索外部小众或专业数据，纯文本模型完全可以完成。  \n\n5. **不存在无法完成的要求**  \n   - 虽然约束严苛（精确的词数、字符范围、特定词长等），但这些都是可在生成时自行控制的形式要求，并不违背模型的生成能力。无任何逻辑上不可实现的条件。  \n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 所有约束相互独立且可兼容：  \n     * 160 词 ÷ 8 词/句 = 20 句 → 符合“每句 8 词”。  \n     * 20 句可分配至 ≤6 段落（如 4 段每段 5 句），避免单段超过 80 词，从而免除必须加入数字的要求。  \n     * 在 80‑150 字符间插入 2‑3 个连字符的做法不影响其它约束。  \n   - 因此逻辑上没有冲突。  \n\n7. **内部逻辑一致，指令内容之间不存在冲突**  \n   - 如上所述，所有要求可以在同一篇稿件中 simultaneously 满足，内部不存在矛盾。  \n\n8. **指令内容完整、材料完整，不存在内容缺失**  \n   - 用户提供了完整的写作主题（加湿器的好处与工作原理）以及所有格式约束，未遗漏任何必要信息。  \n\n9. **用户指令提供了所有需要的数据或信息**  \n   - 题目所需的主题与约束均已明确给出，无需额外数据。  \n\n10. **不需要多轮交互**  \n    - 所有信息一次性提供，模型可以在单次回复中完成全部生成任务，无需来回确认。  \n\n11. **简洁明了**  \n    - 指令虽长，但每条约束均直截了当，无冗余的括号解释或举例，符合“简洁明了”的要求。  \n\n综合上述十一步骤的逐项评估，用户的指令在意图、表述、逻辑、可实现性、完整性以及单轮完成性等方面均符合高质量指令的全部标准。\n\n**最终结论：**[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "```\n分析：\n1. 意图明确：用户明确要求解释家用加湿器的益处及工作原理，并对答案的格式、字数、段落、句子长度、字符范围内的连字符、数字出现次数、“moisture”出现次数以及第二句最后一个词的长度等提供了具体、可执行的约束条件，意图清晰。\n\n2. 语义清晰、通顺：指令的每一项要求均使用规范的中文表达，未出现歧义或难以理解的语句；即使部分约束（如“80th to 150th characters contain 2‑3 hyphens linking humidity‑related terms”）略显专业，但含义仍然明确，可直接理解为在字符 80‑150 范围内出现 2‑3 个用于连接与湿度相关词汇的连字符。\n\n3. 内容无错误信息：指令仅提出生成文本的约束，没有包含任何事实性错误或误导信息。\n\n4. 纯文本模型可完成：所有约束均属于文本结构层面的控制（字数、词数、句长、字符位置、连字符、数字、特定词出现次数），不需要检索外部数据库或实时联网，纯离线语言模型即可实现。\n\n5. 需求可实现且不超出能力：虽然约束细致（精确的字符计数、固定词数、特定单词长度等），但理论上只要在生成前进行逐步计数和校对即可满足，属于高难度但可完成的任务，未出现模型根本无法完成的要求。\n\n6. 逻辑无误：各项约束相互独立且不存在冲突。例如，总词数 160 与每句 8 词对应 20 句，段落不超过 6 段可容纳这些句子；若段落词数不超过 80，则无需满足“一段超过 80 词需包含至少 3 个数字”的条件，故逻辑自洽。\n\n7. 内部一致性：指令体系完整，各项限定条件在文字层面可以统一满足，不出现相互矛盾的要求。\n\n8. 内容完整、材料完整：指令已提供完整的主题（加湿器的益处与工作原理）以及所有格式要求，无需补充额外信息。\n\n9. 所需信息已提供：用户已给出所有约束，模型只需依据这些信息生成答案，无需额外数据输入。\n\n10. 单轮可完成：所有约束均可在一次生成过程中完成，无需与用户进行多轮交互来澄清或补充。\n\n11. 简洁明了：指令虽长，但每条约束均为单句陈述，未在数量要求后附加冗余解释，符合“尽量避免在有关数量的要求的相关描述后，通过括号等方式加入额外解释、定义、举例等”的要求。\n\n综上，用户指令在意图、表述、正确性、可实现性、逻辑一致性、完整性、信息充分性、交互轮数以及简洁性等 11 项标准上均未出现违规或不可完成的情况，符合高质量指令的全部评判条件。\n\n最终结论：[[高质量]]\n```"
+            }
+          ]
+        }
+      },
+      "all_pass": true
+    }
+  },
+  {
+    "id": 8,
+    "prompt": "As a data scientist for a large-scale transportation project, you have been tasked with developing an algorithm for predicting traffic congestion based on live traffic data. Provide a detailed implementation plan covering the identification of appropriate machine learning models, determination of required hardware specifications, and configuration of real-time data processing pipelines. Structure your response into two distinct core sections: *Algorithm Development Framework* and *Deployment & Operationalization*, with the first section containing at least 8 full sentences to elaborate on data feature selection and model selection logic. The full text must total no fewer than 2000 characters, and all Markdown headings must not start with a numeric digit. Organize all key factors affecting congestion prediction accuracy into the first bulleted list in your response, and ensure none of the list entries include any numerals. If you add an extra bulleted list for deployment considerations, each odd-numbered list item must contain no more than 1 numerical digit. Under the heading *Real-World Deployment Risk Scenarios*, present 3 real deployment risk scenarios in a bulleted list, with each list item being a single complete sentence describing a specific scenario. Ensure every sentence in your explanation contains at least 5 uppercase letters. End your response with a single concluding sentence summarizing the overall feasibility of the plan, and ensure the number of punctuation marks in the last 8 characters of the penultimate sentence of your entire response falls between 1 and 2. The final character of your entire response must be a lowercase consonant.",
+    "constraints": [
+      {
+        "constraint": "Structure your response into two distinct core sections: *Algorithm Development Framework* and *Deployment & Operationalization*, with the first section containing at least 8 full sentences to elaborate on data feature selection and model selection logic",
+        "category": {
+          "scope": "Position(Structural Block) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "The full text must total no fewer than 2000 characters",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "All Markdown headings must not start with a numeric digit",
+        "category": {
+          "scope": "Condition(Structural Block) -> Position(Character)",
+          "primary_target": "Pattern",
+          "secondary_target": "Skeleton",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Organize all key factors affecting congestion prediction accuracy into the first bulleted list in your response, and ensure none of the list entries include any numerals",
+        "category": {
+          "scope": "Position(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Prohibition"
+        }
+      },
+      {
+        "constraint": "Each odd-numbered list item in the extra bulleted list for deployment considerations must contain no more than 1 numerical digit",
+        "category": {
+          "scope": "Position(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Under the heading *Real-World Deployment Risk Scenarios*, present 3 real deployment risk scenarios in a bulleted list, with each list item being a single complete sentence describing a specific scenario",
+        "category": {
+          "scope": "Condition(Structural Block) -> Traversal(Structural Element)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Equality"
+        }
+      },
+      {
+        "constraint": "Ensure every sentence in your explanation contains at least 5 uppercase letters",
+        "category": {
+          "scope": "Traversal(Sentence) -> Traversal(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "End your response with a single concluding sentence summarizing the overall feasibility of the plan, and ensure the number of punctuation marks in the last 8 characters of the penultimate sentence of your entire response falls between 1 and 2",
+        "category": {
+          "scope": "Position(Sentence) -> Position(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "Intervals"
+        }
+      },
+      {
+        "constraint": "The final character of your entire response must be a lowercase consonant",
+        "category": {
+          "scope": "Position(Character)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**  \n1. **完整性**：  \n   - 用户指令中的所有格式化要求均被列出：  \n     1) 两个核心章节及第一章节至少 8 句；  \n     2) 总字符数 ≥ 2000；  \n     3) Markdown 标题不能以数字开头；  \n     4) 第一条要点列表必须是首个无数字的项目符号列表；  \n     5) 若出现第二个部署考虑的项目符号列表，奇数项每项至多含 1 个数字；  \n     6) “Real‑World Deployment Risk Scenarios” 标题下必须有 3 条单句要点列表；  \n     7) 每个句子至少包含 5 个大写字母；  \n     8) 结尾必须是单一句概括可行性，并且倒数第二句的最后 8 字符中标点数在 1‑2 之间；  \n     9) 整篇最后一个字符必须是小写辅音。  \n   - 这 9 条在抽取列表中全部出现，未遗漏任何指令中的格式要求。\n\n2. **准确性**：  \n   - 抽取的每条约束的文字与原指令基本一致，且保持了原指令的全部限定条件（例如第 1 条同时包含章节划分与句数下限，第 8 条同时包含结尾句与标点数限制）。  \n   - 没有增加、修改或误解原指令的含义。\n\n3. **唯一性**：  \n   - 各约束在列表中仅出现一次，彼此之间没有内容相同或语义等价的重复。  \n   - 条件之间相互独立，未出现虚构或者未在指令中出现的要求。\n\n4. **表述完整、无歧义**：  \n   - 每条约束均为完整的自然语言陈述，明确指明了作用范围、统计对象及计量范围，能够直接映射到分类体系的三要素，且不存在歧义。\n\n5. **非计数式要求的覆盖**：  \n   - 第 3 条、7 条、8 条、9 条等看似非计数式的要求均已被抽取，并可归入“计量范围”为等于/上下界关系的形式（如“标题不以数字开头”“每句至少 5 个大写字母”“标点数在 1‑2 之间”“末字符为小写辅音”），符合任务说明。\n\n6. **粒度**：  \n   - 抽取者对某些指令将多个子要求合并为单条（如第 1 条同时涵盖章节划分与句数），符合“粒度不做要求”的准则。\n\n综上，抽取结果满足所有判定标准：完整、准确、唯一、表述明确且未遗漏任何格式化需求。\n\n**最终结论**：[[通过]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "通过",
+              "reasoning": "**分析**  \n\n1. **完整性检查**  \n   - 将用户指令逐句拆解，所有涉及回复结构、字符/数字计数、列表内容、标题格式、句式要求、全文长度、结尾字符及标点分布的约束均被逐一列出。  \n   - 逐项对照，指令中出现的九个格式约束分别为：  \n     1) 两个核心章节的结构且第一章节不少于 8 句；  \n     2) 整篇字符数 ≥ 2000；  \n     3) Markdown 标题首字符不能为数字；  \n     4) 第一个项目符号列表必须列出所有关键因素且列表项不得出现数字；  \n     5) 如另设部署考虑的项目符号列表，奇数序号项最多只能出现 1 个数字；  \n     6) 在 *Real‑World Deployment Risk Scenarios* 标题下给出 3 条风险场景，每条为单独完整句子；  \n     7) 每句话至少包含 5 个大写字母；  \n     8) 结尾应为唯一的总结句，并且倒数第二句的最后 8 个字符中标点数量在 1~2 之间；  \n     9) 整体回复的最后一个字符必须是小写辅音。  \n   - 列表中的 9 条约束（id 1‑9）正好对应上述全部约束，未发现遗漏。\n\n2. **准确性检查**  \n   - 所有抽取的约束文本基本保持原句的核心含义，未增加、删减或歪曲任何要求。  \n   - 细节对应关系如下：  \n     - id 1 完整复述了章节划分以及第一章节 8 句的要求；  \n     - id 2、id 3、id 4、id 5、id 6、id 7、id 8、id 9 均忠实于原指令的措辞，仅在表达上做了轻微的同义替换，仍保持语义等价。  \n   - 条件语义（如“如果你添加额外的列表”）在 id 5 中以“extra bulleted list”明确表达，等价且不遗漏。\n\n3. **唯一性检查**  \n   - 9 条约束各自对应不同的维度（结构、长度、标题、列表内容、数字使用、风险列表、大小写、标点、结尾字符），不存在语义重复或同一约束的多次出现。  \n\n4. **表述完整性与明确性**  \n   - 每条约束均为完整的自然语言句子，指代清晰，无歧义。  \n   - 条件与计量范围均清楚标出（例如“至少 8 full sentences”、 “no fewer than 2000 characters”、 “at least 5 uppercase letters”、 “between 1 and 2 punctuation marks”），便于后续分解为“作用域‑作用目标‑计量范围”。  \n\n5. **非计数式格式要求的覆盖**  \n   - 诸如“所有 Markdown 标题不能以数字开头”“每句话至少包含 5 大写字母”“结尾必须是小写辅音”虽未显式给出数值，却已被归类为计量范围为“等于/至少”型的约束，并在列表中完整呈现（id 3、id 7、id 9）。  \n\n6. **抽取粒度**  \n   - 抽取将多个相关子要求合并在同一条（如 id 8 同时包含结尾句与标点计数），符合“在保证完整、无歧义前提下粒度不强制限制”的要求。  \n\n综上，格式要求列表完整、准确、无重复，且表述清晰、符合所有评判标准。\n\n**最终结论**：[[通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "分析：  \n1. **意图明确**：用户明确要求提供一个“详细实现计划”，并对内容结构、章节划分、句子数量、字符总量、列表格式、大小写及标点等多项具体规范进行说明，意图非常清晰。  \n2. **语义清晰、通顺**：指令语言通顺，没有歧义或难以理解的表达，所有要求均以明确的陈述方式呈现。  \n3. **不存在错误内容**：指令本身不包含错误信息或不实陈述，所有描述均为合理的任务需求。  \n4. **在纯文本模型能力范围内**：所需的实现计划可以完全凭借模型的通用知识生成，无需联网获取专有数据或专业文献，符合纯文本模型的能力范围。  \n5. **不存在无法完成的要求**：虽然指令包含大量细节约束（如每句至少5个大写字母、首列表不能包含数字、字符总数≥2000、penultimate句子最后8字符的标点数为1‑2等），这些都是可以通过人工或模型自行控制的格式化要求，并非模型能力所不能实现的。  \n6. **逻辑正确**：指令内部逻辑无矛盾。例如，第一段列出“首个列表不得含数字”，而“若添加第二个列表，奇数项最多1个数字”的要求并不冲突；章节、列表、风险场景的安排也相互兼容。  \n7. **内部一致性**：各项约束相互协调，一致性良好，未出现相互排斥的条件。  \n8. **内容完整、材料完整**：用户提供了完整的任务描述、结构要求以及所有细节约束，没有遗漏关键信息。  \n9. **提供所有所需数据**：实现计划所需要的硬件规格、模型选型、数据特征等均可自行构思，无需额外外部数据支持。  \n10. **单轮可完成**：所有要求均可在一次回复中完整交付，无需多轮交互确认或补充信息。  \n11. **简洁明了**：指令虽包含多条约束，但表达直接，没有冗余的解释或例子，符合简洁原则。\n\n综上所述，用户的指令在意图、语义、逻辑、可实现性以及完整性等方面均符合高质量指令的全部标准。\n\n最终结论：[[高质量]]"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析**  \n\n1. **意图非常明确**  \n   - 用户明确要求提供一份关于“大规模交通项目的交通拥堵预测算法”实现计划，需包括模型选择、硬件规格、实时数据处理管道等内容，并对文档结构、格式、字数、标点、大小写等提出具体限制。意图指向单一且清晰的交付物——一篇符合全部约束的详细实施方案。  \n\n2. **语义非常清晰，语言通顺、流畅、容易理解**  \n   - 虽然指令较长，但每一条要求都用完整的句子表达，层次分明（章节划分、列表规则、字符数、标点数等），不存在歧义或语病。  \n\n3. **不存在错误内容或错误信息**  \n   - 指令只涉及写作格式及技术概念的说明，没有提供事实性信息因此不可能出现错误信息。  \n\n4. **不超出无法联网的纯文本模型的能力范围**  \n   - 所需的技术知识（机器学习模型、特征选择、实时流处理、硬件选型等）均是公开的通用知识，语言模型无需外部检索即可完成。  \n\n5. **不存在无法完成的要求**  \n   - 所有约束虽多且细致（如每句至少5个大写字母、首个列表条目不出现数字、整体字符数≥2000、最后一个字符为小写辅音等），但均为可编写的文本约束，属于高难度的写作任务，而非模型能力之外的不可实现。  \n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 各条约束之间相互兼容：  \n     - 第一个列表禁止使用数字，第二个（可选）列表对奇数项仅限制最多出现1个数字，二者不冲突。  \n     - “所有 Markdown 标题不得以数字开头” 与其他要求无冲突。  \n     - “如果添加额外的部署考虑列表” 为可选项，避免强制出现冲突。  \n   - 没有循环或自相矛盾的指令。  \n\n7. **内部逻辑一致**  \n   - 从章节划分、列表要求、字符数、句子大写字母数、标点数、结尾字符等，各项要求均可在同一篇文稿中一次性实现，未出现相互排斥的条件。  \n\n8. **指令内容完整、材料完整**  \n   - 用户提供了完整的需求说明，包括章节标题、列表内容、字数下限、格式限制等，未出现信息缺失。  \n\n9. **用户指令提供了所有需要的数据或信息**  \n   - 实现计划所需的背景信息（交通项目、大规模、实时数据）已在指令中给出，模型无需额外数据即可完成。  \n\n10. **不需要多轮交互**  \n    - 所有信息均一次性提供，模型能够在单轮回复中生成符合全部约束的完整文本。  \n\n11. **简洁明了**  \n    - 虽然约束较多，但每条都直接陈述，没有冗余的括号解释、示例或额外说明，符合“简洁明了”的要求。  \n\n综上所述，用户指令在意图、表达、可实现性、逻辑一致性以及完整性方面均满足高质量指令的全部评判标准，未出现任何违背条件的情形。\n\n**最终结论**：[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": true
+    }
+  },
+  {
+    "id": 9,
+    "prompt": "Revise the following paragraph to align with APA style guidelines, and structure your response per the below specifications: Start with a clear overview of your revision approach organized into 3 distinct paragraphs: the first introduces key APA compliance issues present in the original text, the second outlines your core revision framework, the third lists post-revision verification checkpoints, and ensure the third paragraph contains more than twice as many sentences as the first paragraph. Extract 3 major adjustment points from your revision work, with each adjustment point presented in a separate blockquote section, and ensure the total character count of each blockquote is exactly twice that of the previous blockquote. Organize 6 actionable APA revision operation tips into a numbered list, and ensure the 5th entry in this list includes no fewer than 2 nested sub-points detailing low-effort APA format verification techniques. Any list item that contains the phrase \"in-text citation\" must include the terms \"parenthetical reference\" and \"reference list entry\". Enclose every word with 9 or more letters in square brackets, and include at least 6 such words in your response. Present each highlighted improvement made to the original text in its own <details> disclosure block. Every <details> block must include a fenced code snippet showing a side-by-side comparison of the original and revised text snippets. Any paragraph that contains the word \"conciseness\" must contain at least 3 full sentences to elaborate on APA style’s requirements for concise, academic phrasing. Make certain the total number of sentences in your full response is at least 8 times the number of hyphens used throughout the entire text. End your response with a short final paragraph with a quick APA style self-check tip, and ensure the third word of that final paragraph contains a capital letter.\n\nOriginal paragraph:\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "Structure your revision approach overview into 3 distinct paragraphs: the first introduces key APA compliance issues present in the original text, the second outlines your core revision framework, the third lists post-revision verification checkpoints, and ensure the third paragraph contains more than twice as many sentences as the first paragraph",
+        "category": {
+          "scope": "Position(Paragraph)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "Extract 3 major adjustment points from your revision work, with each adjustment point presented in a separate blockquote section, and ensure the total character count of each blockquote is exactly twice that of the previous blockquote",
+        "category": {
+          "scope": "Position(Structural Block)",
+          "primary_target": "Relations",
+          "secondary_target": "Chaining Relations",
+          "range": "Arithmetic Relations"
+        }
+      },
+      {
+        "constraint": "Organize 6 actionable APA revision operation tips into a numbered list, and ensure the 5th entry in this list includes no fewer than 2 nested sub-points detailing low-effort APA format verification techniques",
+        "category": {
+          "scope": "Position(Structural Element)",
+          "primary_target": "Structure",
+          "secondary_target": "Members",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Any list item that contains the phrase \"in-text citation\" must include the terms \"parenthetical reference\" and \"reference list entry\"",
+        "category": {
+          "scope": "Condition(Structural Element)",
+          "primary_target": "Literals",
+          "secondary_target": "Specific Strings",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Enclose every word with 9 or more letters in square brackets, and include at least 6 such words in your response",
+        "category": {
+          "scope": "Condition(Word)",
+          "primary_target": "Pattern",
+          "secondary_target": "Boundary",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Present each highlighted improvement made to the original text in its own <details> disclosure block. Every <details> block must include a fenced code snippet showing a side-by-side comparison of the original and revised text snippets",
+        "category": {
+          "scope": "Traversal(Structural Block) -> Traversal(Structural Block)",
+          "primary_target": "Structure",
+          "secondary_target": "Containers",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Any paragraph that contains the word \"conciseness\" must contain at least 3 full sentences to elaborate on APA style’s requirements for concise, academic phrasing",
+        "category": {
+          "scope": "Condition(Paragraph) -> Traversal(Sentence)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      },
+      {
+        "constraint": "Make certain the total number of sentences in your full response is at least 8 times the number of hyphens used throughout the entire text",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "Comparison"
+        }
+      },
+      {
+        "constraint": "End your response with a short final paragraph with a quick APA style self-check tip, and ensure the third word of that final paragraph contains a capital letter",
+        "category": {
+          "scope": "Position(Paragraph) -> Position(Word)",
+          "primary_target": "Literals",
+          "secondary_target": "Literal Classes",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ],
+    "validation": {
+      "stages": {
+        "extraction": {
+          "pass": false,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "不通过",
+              "reasoning": "**分析**：\n\n1. **用户指令中出现的格式要求**  \n   ① “Start with a clear overview of your revision approach organized into **3 distinct paragraphs** …, and **ensure the third paragraph contains more than twice as many sentences as the first paragraph**”。  \n   ② “Extract **3 major adjustment points** … each in a **separate blockquote**, and **the total character count of each blockquote is exactly twice that of the previous blockquote**”。  \n   ③ “Organize **6 actionable APA revision operation tips** into a **numbered list**, and **the 5th entry must contain no fewer than 2 nested sub‑points** detailing low‑effort verification techniques”。  \n   ④ “Any list item that contains the phrase **‘in‑text citation’** must also include the terms **‘parenthetical reference’** and **‘reference list entry’**”。  \n   ⑤ “Enclose **every word with ≥9 letters** in square brackets, and **include at least 6 such words**”。  \n   ⑥ “Present each **highlighted improvement** in its own **\\<details\\> disclosure block**; every **\\<details\\> block must contain a fenced code snippet** showing a side‑by‑side comparison of the original and revised text”。  \n   ⑦ “Any paragraph that contains the word **‘conciseness’** must contain **at least 3 full sentences** elaborating APA’s concise‑style requirements”。  \n   ⑧ “The **total number of sentences** in the full response must be **≥ 8 × the number of hyphens** used in the whole text”。  \n   ⑨ “**End** the response with a **short final paragraph** that contains a **quick APA style self‑check tip**, and the **third word of that final paragraph must contain a capital letter**”。  \n\n   以上九条全部属于可拆解为“作用域‑作用目标‑计量范围”的格式约束。  \n   句首的 “Revise the following paragraph to align with APA style guidelines” 属于内容/写作指令，不在格式约束范围，故不应出现在抽取结果中。\n\n2. **抽取列表的逐项核对**  \n\n   | 抽取项 (id) | 与用户指令对应的内容 | 是否完全覆盖 |\n   |---|---|---|\n   | **1** | “Structure your revision approach overview into 3 distinct paragraphs … ensure the third paragraph contains more than twice as many sentences as the first paragraph” | **缺失**：未明确指出该概述必须 **“Start with”**（即位于回复的最前面）。位置限定是用户指令中明确的格式要求，抽取中未体现，构成遗漏。 |\n   | **2** | 完全对应“Extract 3 major adjustment points … blockquote … character count exactly twice previous”. | 完整、准确 |\n   | **3** | 完全对应“Organize 6 actionable … numbered list … 5th entry … ≥ 2 nested sub‑points”. | 完整、准确 |\n   | **4** | 完全对应“Any list item containing ‘in‑text citation’ must also include ‘parenthetical reference’ and ‘reference list entry’”. | 完整、准确 |\n   | **5** | 完全对应“Enclose every word with ≥9 letters in square brackets, and include at least 6 such words”. | 完整、准确 |\n   | **6** | 完全对应“Present each highlighted improvement in its own <details> block, each with a fenced code snippet showing side‑by‑side comparison”. | 完整、准确 |\n   | **7** | 完全对应“Any paragraph that contains the word ‘conciseness’ must contain at least 3 full sentences”. | 完整、准确 |\n   | **8** | 完全对应“Make certain the total number of sentences in your full response is at least 8 times the number of hyphens used”. | 完整、准确 |\n   | **9** | 完全对应“End your response with a short final paragraph … quick APA style self‑check tip … third word contains a capital letter”. | 完整、准确 |\n\n3. **重复与虚构**  \n   - 列表中每一条均唯一，未出现内容相同或语义等价的重复项。  \n   - 所有条目均源自用户指令，未出现未提及的虚构约束。\n\n4. **整体完整性评估**  \n   - 除了 **id 1** 中遗漏的 **“Start with”** 位置限定外，其他八条全部覆盖且表达准确。  \n   - 位置限定属于格式约束（作用域的索引/顺序），依据评价准则 1、2、3、5 必须被抽取。其缺失导致抽取结果不完整。\n\n**最终结论**：[[不通过]]"
+            },
+            {
+              "pass": false,
+              "parse_ok": true,
+              "label": "不通过",
+              "reasoning": "**分析**：\n\n1. **完整性检查**  \n   - 用户指令中包含 9 条明确的格式约束。抽取列表也提供了 9 条对应约束，基本覆盖了大多数需求。  \n   - 然而，第一条指令的完整表述为：“**Start with** a clear overview of your revision approach organized into 3 distinct paragraphs…”。抽取的第 1 条仅写为“Structure your revision approach overview into 3 distinct paragraphs…”，缺失了“Start with”这一 **位置/顺序** 要求。该要求决定了概览必须位于回复的最前端，是可拆解为“作用域（回复全局）‑‑‑>作用目标（概览段落）‑‑‑>计量范围（位于首位）”的格式约束。因未在抽取中体现，这属于遗漏。\n\n2. **准确性检查**  \n   - 除第 1 条的顺序缺失外，剩余 8 条均准确复现了用户原文的内容、词句和约束细节，没有出现歧义、错译或虚构的约束。  \n   - 各条目之间无重复，且表述完整、清晰。\n\n3. **重复性检查**  \n   - 没有出现内容相同或语义等价的重复抽取。\n\n4. **非计数式格式要求**  \n   - 所有非计数式的要求（如“结束段落的第三个词必须含大写字母”等）均已在抽取列表中出现，未遗漏。\n\n5. **整体结论**  \n   - 虽然抽取列表在大多数方面表现良好，但缺失了首段必须 **“Start with”** 的位置约束，这导致抽取结果未能完整覆盖用户指令中的所有格式要求。\n\n**最终结论**：[[不通过]]"
+            }
+          ]
+        },
+        "quality": {
+          "pass": true,
+          "aggregation": "all_runs_must_pass",
+          "num_runs": 2,
+          "runs": [
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析：**  \n以下依据用户指令所列的 11 条高质量标准逐项进行评估。\n\n1. **意图非常明确**  \n   - 用户明确要求对提供的原段落进行 APA 风格的修订，并对回复的结构、内容、格式、计数等提出一系列具体要求。意图清晰，无歧义。  \n\n2. **语义非常清晰，语言通顺、流畅、容易理解**  \n   - 虽然指令包含大量约束，但每一项均使用明确的动词（“Revise”“Start with”“Extract”“Organize”等）和具体的数量描述（“3 distinct paragraphs”“more than twice as many sentences”“exactly twice that of the previous blockquote”），语义可直接理解。不存在歧义或语病。  \n\n3. **不存在错误内容或错误信息**  \n   - 指令中未出现 factual error、时间错误或概念错误，仅为结构性要求，均属合理。  \n\n4. **不超出无法联网的纯文本模型的能力范围**  \n   - 任务只需基于已有的 APA 基础知识对一段文字进行改写，并在纯文本中输出符合格式要求的内容。无需检索外部文献或专有数据库，完全在语言模型的知识库与文本生成能力范围内。  \n\n5. **不存在无法完成的要求**  \n   - 所有约束（段落句数关系、块引用字符数比例、列表嵌套、单词加括号、<details> 块与代码块、句子–连字符比率等）虽难度较高，但在原则上均可通过人工计数和慎重排版实现。没有涉及模型能力上不可实现的限制（如实时网络查询、执行外部程序等）。  \n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 各约束之间相互独立且不相互冲突：  \n     - 第三段句数 > 2×第一段句数 与 “句子数 ≥ 8 × 连字符数” 可通过不使用连字符来满足。  \n     - 块引用字符数递增的比例与 “每个块引用对应一个调整点” 并不冲突，只要在撰写时调节文字长度即可。  \n     - 列表项中出现 “in‑text citation” 必须附带特定词汇，同样是可实现的局部规则。  \n\n7. **内部逻辑一致**  \n   - 指令的所有子要求可以在同一篇完整回复中同步实现，没有相互矛盾的指令。  \n\n8. **指令内容完整、材料完整**  \n   - 用户提供了原始段落，且列出了全部格式与计数需求，未出现材料缺失或信息不足的情形。  \n\n9. **用户指令提供了所有需要的数据或信息**  \n   - 除原段落外，所有约束均为指令本身所规定，无需额外输入。  \n\n10. **不需要多轮交互**  \n    - 所有要求均可在一次生成中一次性完成。无需后续澄清或补充。  \n\n11. **简洁明了**  \n    - 虽然指令较为繁复，但每一条约束都直接表述，未出现不必要的括号解释、冗余示例或重复说明，符合“简洁明了”的要求。  \n\n综合上述 11 条评判标准，用户的指令在意图、表述、逻辑、可行性、完整性及一次性完成性方面均符合高质量的全部条件，未发现任何违反项。\n\n**最终结论：[[高质量]]**"
+            },
+            {
+              "pass": true,
+              "parse_ok": true,
+              "label": "高质量",
+              "reasoning": "**分析：**  \n\n1. **意图明确**  \n   - 用户要求对给出的原始段落进行APA风格的修订，并且在回复中遵循一系列非常具体的格式、计数和排版约束。意图清晰且唯一，未出现模糊或多义的指向。\n\n2. **语义清晰、语言通顺**  \n   - 虽然指令包含大量细则，但每条细则的语言均为完整的陈述句，逻辑关系（如“并且”“确保”“以及”）使用得当。未出现歧义或难以理解的表达，语句结构完整。\n\n3. **不存在错误内容或错误信息**  \n   - 指令中仅描述了对文本的编辑与排版要求，没有包含任何错误或不实的陈述。\n\n4. **在纯文本模型能力范围内**  \n   - 所有任务均为文本加工、字符计数、格式化（Markdown、HTML `<details>`、代码块）以及遵循APA写作规范，这些均是语言模型离线即可完成的，不需要外部网络或专业数据库。\n\n5. **不存在无法完成的要求**  \n   - 各项约束虽然繁复（如块引用字符数必须严格成倍递增、每个 ≥9 字母的单词需加方括号、句子数与连字符数的比例等），但在理论上均可通过精确控制文字内容实现，属于“高难度但可完成”。没有出现绝对不可能实现的条件。\n\n6. **不存在错误的逻辑或混乱的逻辑**  \n   - 所有约束之间相互独立且不冲突。例如，要求第三段句数 > 2×第一段句数，与块引用字符倍增、列表嵌套子项等并不矛盾。逻辑链条完整。\n\n7. **内部逻辑一致**  \n   - 各条要求在执行顺序上相互兼容：先提供概览段落 → 块引用 → 编号列表 → 方括号标记 → `<details>` → 句子/连字符比例 → 结束段落。未出现相互排斥的指令。\n\n8. **指令内容完整、材料完整**  \n   - 提供了完整的原始段落，且所有后续编辑所需的素材（如APA规范的常规要点）均属于常识范围，无需额外材料。\n\n9. **提供了所有需要的数据或信息**  \n   - 原始文本完整提供，用户对输出格式的细节也全部列出，无需补充信息即可执行。\n\n10. **无需多轮交互**  \n    - 所有约束均可以在一次回复中一次性满足。不存在需要后续澄清或补充的情形。\n\n11. **简洁明了**  \n    - 虽然指令内容较多，但每条要求直截了当，没有使用额外的括号解释或举例，符合“简洁明了”的要求。\n\n**潜在的细微模糊点**  \n- “字符计数”是否包括空格、换行或Markdown标记未明确，但这类技术细节在实际实现时可自行约定，且不妨碍任务的可执行性。整体上不构成逻辑错误或不可完成的障碍。\n\n综合以上 eleven 条评估标准，用户指令在意图、表达、可实现性、完整性以及内部一致性方面均符合高质量指令的所有要求。\n\n**最终结论：**  \n[[高质量]]"
+            }
+          ]
+        }
+      },
+      "all_pass": false
+    }
+  }
+]

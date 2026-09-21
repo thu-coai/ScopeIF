@@ -1,0 +1,512 @@
+[
+  {
+    "id": 0,
+    "seed_prompt_id": 0,
+    "original_prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same.",
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same, with your entire response totaling at least 800 words to ensure you fully elaborate code modification details, grade calculation rules, comment generation logic, validation steps and edge case handling.",
+    "constraints": [
+      {
+        "constraint": "with your entire response totaling at least 800 words to ensure you fully elaborate code modification details, grade calculation rules, comment generation logic, validation steps and edge case handling",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "seed_prompt_id": 0,
+    "original_prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same.",
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a clear, concise procedure for the same, keeping your entire response under 3500 characters to avoid redundant explanations, unnecessary tangents and overly verbose code comments.",
+    "constraints": [
+      {
+        "constraint": "keeping your entire response under 3500 characters to avoid redundant explanations, unnecessary tangents and overly verbose code comments",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "seed_prompt_id": 0,
+    "original_prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same.",
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same, splitting your entire explanation into at least 6 distinct paragraphs to separate different implementation phases for readability.",
+    "constraints": [
+      {
+        "constraint": "splitting your entire explanation into at least 6 distinct paragraphs to separate different implementation phases for readability",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "seed_prompt_id": 0,
+    "original_prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same.",
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a concise, focused procedure for the same, using no more than 60 complete sentences in your entire response to ensure every statement conveys targeted, useful information.",
+    "constraints": [
+      {
+        "constraint": "using no more than 60 complete sentences in your entire response to ensure every statement conveys targeted, useful information",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "seed_prompt_id": 0,
+    "original_prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same.",
+    "prompt": "How would you modify the given PHP code to allow the teacher to input grades for multiple subjects for each student, and calculate the overall grade for each student based on their individual grades? What would be the steps involved in generating a corresponding comment based on the calculated grade, with respect to each subject? Please provide a detailed procedure for the same, ensuring your entire response spans at least 40 lines when rendered as plain text to give you sufficient space to present code snippets and step details separately.",
+    "constraints": [
+      {
+        "constraint": "ensuring your entire response spans at least 40 lines when rendered as plain text to give you sufficient space to present code snippets and step details separately",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "seed_prompt_id": 1,
+    "original_prompt": "In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "prompt": "Answer the following finance-related questions in a response with a total word count of at least 1100: In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "constraints": [
+      {
+        "constraint": "Answer the following finance-related questions in a response with a total word count of at least 1100:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "seed_prompt_id": 1,
+    "original_prompt": "In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "prompt": "Respond to the following questions with a total character count not exceeding 6000: In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "constraints": [
+      {
+        "constraint": "Respond to the following questions with a total character count not exceeding 6000:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "seed_prompt_id": 1,
+    "original_prompt": "In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "prompt": "Organize your response to the following finance questions into at least 4 distinct paragraphs: In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "constraints": [
+      {
+        "constraint": "Organize your response to the following finance questions into at least 4 distinct paragraphs:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "seed_prompt_id": 1,
+    "original_prompt": "In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "prompt": "The total number of complete sentences in your response to the following questions must not exceed 55: In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "constraints": [
+      {
+        "constraint": "The total number of complete sentences in your response to the following questions must not exceed 55:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "seed_prompt_id": 1,
+    "original_prompt": "In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "prompt": "Ensure your response to the following questions spans at least 55 total lines when separated by line breaks: In the field of finance, what measures can be implemented using Python to ensure ethical considerations are prioritized when utilizing machine learning algorithms for investment decision-making? Is it possible to automate the identification and exclusion of investments that conflict with ethical guidelines using Python? If so, what would be the appropriate Python code for this task?",
+    "constraints": [
+      {
+        "constraint": "Ensure your response to the following questions spans at least 55 total lines when separated by line breaks:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "seed_prompt_id": 0,
+    "original_prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world? As you build out all required content for this presentation, make sure your entire response totals at least 1300 words to fully cover industry-specific case studies, data interpretation, code annotations, and nuanced reasoning for your final conclusion.",
+    "constraints": [
+      {
+        "constraint": "As you build out all required content for this presentation, make sure your entire response totals at least 1300 words to fully cover industry-specific case studies, data interpretation, code annotations, and nuanced reasoning for your final conclusion.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "seed_prompt_id": 0,
+    "original_prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world? Organize all content for this presentation into no more than 10 distinct paragraphs across your entire response, with each paragraph corresponding to a core component such as an industry analysis section, data table, code block, or conclusion segment.",
+    "constraints": [
+      {
+        "constraint": "Organize all content for this presentation into no more than 10 distinct paragraphs across your entire response, with each paragraph corresponding to a core component such as an industry analysis section, data table, code block, or conclusion segment.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "seed_prompt_id": 0,
+    "original_prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world? Ensure your entire response is long enough to fill 3 full pages of 12-point single-spaced A4 paper, so you have sufficient space to elaborate on all required data, analysis, and supporting evidence for the presentation.",
+    "constraints": [
+      {
+        "constraint": "Ensure your entire response is long enough to fill 3 full pages of 12-point single-spaced A4 paper, so you have sufficient space to elaborate on all required data, analysis, and supporting evidence for the presentation.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "seed_prompt_id": 0,
+    "original_prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world? Keep your entire response concise enough that it can be viewed in full without scrolling on a standard 1080p screen using default notepad settings, to make it easy to reference while assembling the PowerPoint file.",
+    "constraints": [
+      {
+        "constraint": "Keep your entire response concise enough that it can be viewed in full without scrolling on a standard 1080p screen using default notepad settings, to make it easy to reference while assembling the PowerPoint file.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "seed_prompt_id": 0,
+    "original_prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world?",
+    "prompt": "Can you create a PowerPoint presentation about the effects of globalization on different industries? Please include data in the form of [ Excel tables ] and [ charts ]. Additionally, provide [ R code ] to show the correlation between international trade and economic growth in developing countries. Finally, can you conclude the presentation with your own opinion on whether globalization has had a net positive or negative impact on the world? Include at least 90 complete sentences across your entire response to ensure you adequately explain every data point, code function, industry impact, and step of your reasoning for the final conclusion of the presentation.",
+    "constraints": [
+      {
+        "constraint": "Include at least 90 complete sentences across your entire response to ensure you adequately explain every data point, code function, industry impact, and step of your reasoning for the final conclusion of the presentation.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "seed_prompt_id": 1,
+    "original_prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "prompt": "As you answer the following question, keep your response structured into no more than 5 distinct paragraphs: What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "constraints": [
+      {
+        "constraint": "As you answer the following question, keep your response structured into no more than 5 distinct paragraphs:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "seed_prompt_id": 1,
+    "original_prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "prompt": "Ensure your response spans no fewer than 20 total lines when addressing the following question: What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "constraints": [
+      {
+        "constraint": "Ensure your response spans no fewer than 20 total lines when addressing the following question:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "seed_prompt_id": 1,
+    "original_prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "prompt": "The total character count of your response to the following question must be at least 2500: What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "constraints": [
+      {
+        "constraint": "The total character count of your response to the following question must be at least 2500:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "seed_prompt_id": 1,
+    "original_prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "prompt": "The total number of complete sentences in your response to the following question must be no less than 20: What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "constraints": [
+      {
+        "constraint": "The total number of complete sentences in your response to the following question must be no less than 20:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "seed_prompt_id": 1,
+    "original_prompt": "What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "prompt": "The total word count of your response to the following question may not exceed 900: What is the best way to prepare for a job interview in the tech industry, and what are the top three skills that are most in demand?",
+    "constraints": [
+      {
+        "constraint": "The total word count of your response to the following question may not exceed 900:",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "seed_prompt_id": 0,
+    "original_prompt": "Write a list of Nintendo consoles",
+    "prompt": "Write a list of Nintendo consoles, with your entire response totaling at least 180 words to ensure you provide sufficient detail for each listed console rather than only naming each hardware entry.",
+    "constraints": [
+      {
+        "constraint": "with your entire response totaling at least 180 words to ensure you provide sufficient detail for each listed console rather than only naming each hardware entry",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "seed_prompt_id": 0,
+    "original_prompt": "Write a list of Nintendo consoles",
+    "prompt": "Write a list of Nintendo consoles, keeping your entire response concise enough to fit on a single side of A6 pocket-sized notepaper when printed in 10-point font, so it can be carried as a quick reference for retro game collecting trips.",
+    "constraints": [
+      {
+        "constraint": "keeping your entire response concise enough to fit on a single side of A6 pocket-sized notepaper when printed in 10-point font, so it can be carried as a quick reference for retro game collecting trips",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "seed_prompt_id": 0,
+    "original_prompt": "Write a list of Nintendo consoles",
+    "prompt": "Write a list of Nintendo consoles, ensuring your entire response spans at least 20 distinct lines when rendered as plain text to make each console entry easily scannable for readers.",
+    "constraints": [
+      {
+        "constraint": "ensuring your entire response spans at least 20 distinct lines when rendered as plain text to make each console entry easily scannable for readers",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "seed_prompt_id": 0,
+    "original_prompt": "Write a list of Nintendo consoles",
+    "prompt": "Write a list of Nintendo consoles, using no more than 28 complete sentences across your entire response to ensure every entry stays focused on core details without unnecessary digressions.",
+    "constraints": [
+      {
+        "constraint": "using no more than 28 complete sentences across your entire response to ensure every entry stays focused on core details without unnecessary digressions",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "seed_prompt_id": 0,
+    "original_prompt": "Write a list of Nintendo consoles",
+    "prompt": "Write a list of Nintendo consoles, ensuring your entire response is long enough that it cannot be fully viewed in a single 15-line mobile terminal window without scrolling, to offer more context than a minimal name-only list.",
+    "constraints": [
+      {
+        "constraint": "ensuring your entire response is long enough that it cannot be fully viewed in a single 15-line mobile terminal window without scrolling, to offer more context than a minimal name-only list",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "seed_prompt_id": 1,
+    "original_prompt": "In APA style, how would you revise the following paragraph to reflect the style?\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "prompt": "As you explain how to revise the following paragraph to meet APA style requirements, ensure your complete response, including the revised full paragraph and explanations of all APA-aligned adjustments, has a total word count of at least 380.\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "ensure your complete response, including the revised full paragraph and explanations of all APA-aligned adjustments, has a total word count of at least 380.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "seed_prompt_id": 1,
+    "original_prompt": "In APA style, how would you revise the following paragraph to reflect the style?\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "prompt": "When answering how to revise the following paragraph to align with APA style guidelines, organize your full response into at least 3 separate paragraphs: one for the fully revised text, one for explanations of APA-specific formatting changes, and one for clarifications of stylistic adjustments aligned with APA standards.\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "organize your full response into at least 3 separate paragraphs: one for the fully revised text, one for explanations of APA-specific formatting changes, and one for clarifications of stylistic adjustments aligned with APA standards.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "seed_prompt_id": 1,
+    "original_prompt": "In APA style, how would you revise the following paragraph to reflect the style?\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "prompt": "In APA style, how would you revise the following paragraph to reflect the style? Keep the total character count of your entire response under 1800, prioritizing clear, concise explanations of only the most critical revisions.\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "Keep the total character count of your entire response under 1800, prioritizing clear, concise explanations of only the most critical revisions.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Text Length",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "seed_prompt_id": 1,
+    "original_prompt": "In APA style, how would you revise the following paragraph to reflect the style?\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "prompt": "As you describe how to revise the following paragraph to adhere to APA style rules, structure your entire response into no more than 4 distinct paragraphs, with the first dedicated to the fully revised paragraph and subsequent paragraphs covering your key edit justifications.\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "structure your entire response into no more than 4 distinct paragraphs, with the first dedicated to the fully revised paragraph and subsequent paragraphs covering your key edit justifications.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "seed_prompt_id": 1,
+    "original_prompt": "In APA style, how would you revise the following paragraph to reflect the style?\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "prompt": "In APA style, how would you revise the following paragraph to reflect the style? Ensure your full response spans no more than 28 total lines, including the revised paragraph and all supporting explanations of your changes.\nIn recent years, various studies have demonstrated that online learning can be as effective, if not more effective, than traditional learning methods. The widespread acceptance of digital education presents an exciting opportunity for both learners and educators.",
+    "constraints": [
+      {
+        "constraint": "Ensure your full response spans no more than 28 total lines, including the revised paragraph and all supporting explanations of your changes.",
+        "category": {
+          "scope": "Global(Entire Response)",
+          "primary_target": "Capacity",
+          "secondary_target": "Unit Count",
+          "range": "One-Sided Bounds"
+        }
+      }
+    ]
+  }
+]
