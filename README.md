@@ -101,3 +101,15 @@ python run_scopeif.py --stage score --judge_model_path <path_to_gpt_oss_120b> --
 ```
 
 Results land in `results/<name>/`. The `responses.jsonl` file holds the generations, `responses_scored.json` holds the per-constraint judgements, and `metrics.json` holds the ISR and CSR scores along with the per-category breakdown.
+
+## 👏 Citation
+
+```bibtex
+@article{wen2026scopeif,
+  title   = {ScopeIF: Improving Scope-Aware Precise Instruction-Following in Large Language Models via Graded Reward Modeling},
+  author  = {Bosi Wen and Yilin Niu and Xiaoying Ning and Ying Zhang and Hongning Wang and Minlie Huang},
+  journal = {arXiv preprint arXiv:2609.32189},
+  year    = {2026}
+}
+```
+Please kindly cite our paper if this paper and the codes are helpful.
